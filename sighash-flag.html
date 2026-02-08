@@ -1,0 +1,83 @@
+<!doctype html>
+<html><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>Sighash flag  - Glossario Bitcoin</title><link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"/><link href="bootstrap-5.2.0-dist/css/bootstrap.min.css" rel="stylesheet"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"/><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/4.1.5/css/flag-icons.min.css" integrity="sha512-UwbBNAFoECXUPeDhlKR3zzWU3j8ddKIQQsDOsKhXQGdiB5i3IHEXr9kXx82+gaHigbNKbTDp3VY/G6gZqva6ZQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/></head><body><div><header style="background: #ff9300;"><header class="p-4 bg-white flex flex-col lg:flex-row justify-between items-center"><div><a href="https://bitcoinitalianetwork.com/" class="text-lg"><span class="font-bold text-black"><span class="bg-green-500">&nbsp;₿itcoin</span><span>Italia</span><span class="bg-red-500 text-white">Network&nbsp;</span></span></a></div></header></header><div class="container"><nav><ol class="breadcrumb"><li class="breadcrumb-item"><a href="https://bitcoinitalianetwork.com/">Home</a></li><li class="breadcrumb-item"><a href="https://glossario.bitcoinitalianetwork.com/">Glossario</a></li><li class="breadcrumb-item"><a href="livello_avanzato.html">avanzato</a></li><li class="breadcrumb-item"><a href="avanzato_tecnologia.html">tecnologia</a></li></ol></nav></div><main><div class="container"><div class="card"><div class="card-body"><h5 class="card-body"><div><p><span class="flag-icon flag-icon-gb"></span><span> </span>Sighash flag</p><div></div></div></h5><p class="card-text"><div><p><span class="text-secondary">Difficoltà: </span><a href="livello_avanzato.html" class="badge bg-primary">avanzato</a></p><p><span class="text-secondary">Argomento: </span><span class="badge rounded-pill bg-success">tecnologia</span></p><hr/><p class="fw-bold">DEFINIZIONE</p><section><p class="fs-5"><p>Chi usa Bitcoin di solito dà per scontato che quando si vuole spendere i propri bitcoin, sia sufficiente firmare una transazione con la propria chiave privata.</p>
+<p>Questo è vero, ma è una eccessiva semplificazione.
+Le transazioni Bitcoin possono essere firmate in diversi modi, e questi modi vengono definiti <strong>SIGHASH</strong>.
+Il Sighash viene codificato nella parte della firma della transazione.</p>
+<p>Una signature, firma un hash di dati, e quindi una firma attribuisce certezza ad un pezzo di dati, ovvero ne effettua il <a href="commitment.html">commitment</a>.
+Se i dati vengono modificati dopo la creazione della firma, la firma viene invalidata.
+Pertanto, una firma è un commitment verso un determinato insieme di dati.
+Una firma può quindi effettuare il commitment solo ad un sottoinsieme dei dati in una transazione, e questo rende le firme utili per una serie di scenari.</p>
+<p>La presenza di più tipi di firma ci permette di creare transazioni innovative che non si limitano a spendere Bitcoin.</p>
+<p>Il Sighash flag, flag dell'hash (sighash) della <a href="signature.html">signature</a> o della firma, è una piccola parte di ogni input di una <a href="tx.html">transazione</a> che determina quali parti della transazione diventano immutabili una volta che una firma è stata aggiunta alla transazione.</p>
+<p>Bisogna inoltre ricordare che una transazione può avere diversi input, e ogni input può contenere una diversa firma nel suo script di sblocco <a href="scriptsig.html">ScriptSig</a>. Di conseguenza, una transazione che contiene più input può avere firme con flag SIGHASH diversi che effettuano il commit a parti diverse della transazione in ciascuno degli input. Si noti anche che le transazioni bitcoin possono contenere input di diversi "proprietari", che possono firmare solo un input in una transazione parzialmente costruita (e non valida), collaborando con altri per raccogliere tutte le firme necessarie a creare una transazione valida. Molti dei tipi di flag SIGHASH hanno senso solo se si pensa a più partecipanti che collaborano al di fuori della rete bitcoin e aggiornano una transazione parzialmente firmata.</p>
+<p>Notare che i flag SIGHASH raramente vengono presentati come opzione nei wallet portafoglio. I wallet che costruiscono gli script <a href="p2pkh.html">P2PKH</a> generalmente li firmano con i flag SIGHASH_ALL. Per utilizzare un flag SIGHASH diverso, può essere necessario scrivere un software per costruire e firmare le transazioni.</p>
+<p>Il flag sighash determina su quale insieme di dati all'interno della transazione è stato fatto il commitment, ed esistono tre flag SIGHASH: ALL, NONE e SINGLE.</p>
+<table>
+<thead>
+<tr>
+<th>SIGHASH flag</th>
+<th style="text-align: right;">Valore</th>
+<th>Descrizione</th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ALL</td>
+<td style="text-align: right;"><strong>0x01</strong></td>
+<td>La firma si applica a tutti gli input e gli output</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>NONE</td>
+<td style="text-align: right;"><strong>0x02</strong></td>
+<td>La firma si applica a tutti gli input, ma a nessun output.</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>SINGLE</td>
+<td style="text-align: right;"><strong>0x03</strong></td>
+<td>La firma si applica a tutti gli input, ma solo all'output con lo stesso numero di indice dell'ingresso firmato</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Inoltre, esiste un flag di modifica SIGHASH_ANYONECANPAY, che può essere combinato con ciascuno dei flag precedenti. Quando ANYONECANPAY è impostato, solo un input viene firmato, lasciando gli altri (e i loro numeri di sequenza) aperti alla modifica. ANYONECANPAY ha il valore 0x80 e viene applicato mediante OR bitwise, ottenendo i flag combinati come mostrato in Tipi di SIGHASH con modificatori e relativi significati.</p>
+<p>I valori possibili di Sighash flag sono:</p>
+<ul>
+<li>SIGHASH_ALL = 1</li>
+<li>SIGHASH_NONE = 2</li>
+<li>SIGHASH_SINGLE = 3</li>
+<li>SIGHASH_ANYONECANPAY = 0x80</li>
+</ul>
+<h4>SIGHASH_ALL</h4>
+<p>Quasi tutte le transazioni utilizzano il flag sighash SIGHASH_ALL, il che significa che la firma di ogni ingresso è valida solo se tutti gli altri input e output rimangono invariati.</p>
+<p>Altri flag sighash consentono di mantenere valida la firma di un ingresso anche se altri ingressi o uscite vengono modificati.</p>
+<h4>SIGHASH_SINGLE</h4>
+<p>All'interno di una transazione, ogni ingresso richiede la propria firma e quindi il proprio flag sighash.
+Ciò significa che gli input possono essere costruiti in modo flessibile.
+Quando più parti contribuiscono con gli input a una determinata transazione, possono preoccuparsi solo dei propri output specifici. Ad esempio, se Alice contribuisce con 1 BTC a una transazione e si aspetta 1,2 BTC in cambio, probabilmente le interessa solo che il suo output di 1,2 BTC sia garantito alla firma. In questo caso, Alice potrebbe utilizzare il flag SIGHASH_SINGLE. Questo flag impegna tutti gli input, ma solo un singolo output. Ciò consentirebbe alle altre parti della transazione di aggiungere e modificare i propri output a piacimento, purché non alterino l'output di 1,2 BTC di Alice.</p>
+<h4>SIGHASH_NONE</h4>
+<p>In alternativa, nel raro caso in cui una parte della transazione non si preoccupi di quali siano gli output, può utilizzare il flag Sighash SIGHASH_NONE, che impegna tutti gli input ma non gli output.</p>
+<h4>SIGHASH_ANYONECANPAY</h4>
+<p>Infine, il flag SIGHASH_ANYONECANPAY assicura che solo l'input in questione sia firmato, mentre gli altri tre flag sighash da soli assicurano che tutti gli input siano firmati. Questo flag sighash può essere combinato con qualsiasi altro flag sighash per controllare quali uscite e quali ingressi sono firmati.</p>
+<h3>Uso pratico di combinazioni dei Sighash flag</h3>
+<p>Ecco come alcune combinazioni dei valori di Sighash flag possono essere utilizzate nella pratica:</p>
+<h5>ALL | ANYONECANPAY</h5>
+<p>Può essere utile per realizzare una transazione in stile "crowdfunding". Chi cerca di raccogliere fondi può costruire una transazione con un singolo output. Il singolo output paga l'importo "obiettivo" al raccoglitore di fondi. Una transazione di questo tipo non è ovviamente valida, poiché non ha input. Tuttavia, altri possono modificarla aggiungendo un proprio input, come donazione. Essi firmano il loro input con ALL|ANYONECANPAY. Se non viene raccolto un numero sufficiente di input per raggiungere il valore dell'output, la transazione non è valida. Ogni donazione è una "promessa", che non può essere riscossa da chi raccoglie i fondi finché non viene raggiunto l'intero obiettivo.</p>
+<h5>NONE</h5>
+<p>Può essere usato per creare un "assegno al portatore" o un "assegno con destinatario in bianco" di un importo specifico.
+Questa transazione non verrebbe trasmessa alla rete da chi la crea, ma consegnata a qualcuno senza impostare l'indirizzo di destinazione, e chi la riceve può scrivere il proprio indirizzo bitcoin e riscattare l'importo.
+Tramite una transazione di questo tipo si può fare il commit sull'input, lasciando la possibilità di modificare il locking script dell'output.</p>
+<h5>NONE | ANYONECANPAY</h5>
+<p>Può essere usato per costruire un "dust collector", raccoglitore di <a href="dust.html">dust</a> o polvere. Gli utenti che hanno piccoli UTXO nei loro wallet non possono spenderli perché il costo delle fee ne supera il valore. Con questo tipo di firma, le UTXO dust possono essere donati perché chiunque possa aggregarli e spenderli quando vuole.</p>
+<h3>Evoluzioni future di sighash</h3>
+<p>In futuro, al protocollo Bitcoin potrebbero essere aggiunti altri flag sighash, per consentire casi d'uso più flessibili, ma per ora solo i quattro sopra citati sono considerati validi.</p>
+<p>Esistono già alcune proposte per modificare o espandere il sistema SIGHASH. Una di queste proposte è Bitmask Sighash Modes di Glenn Willen di Blockstream, nell'ambito del progetto Elements. L'obiettivo è quello di creare un sostituto flessibile per i tipi di SIGHASH che consenta "bitmask arbitrarie, riscrivibili dal miner, di ingressi e uscite" in grado di esprimere "schemi contrattuali di preimpegno più complessi, come le offerte firmate con modifica in uno scambio di beni distribuito".</p>
+<p><a href="bip-118-anyprevout.html">SIGHASH_ANYPREVOUT</a> è la proposta di un nuovo tipo di flag sighash, che firma la maggior parte della transazione, ma non gli input. Ciò significa che gli input possono essere scambiati, purché i nuovi input siano ancora compatibili con la firma.</p></p></section><div class="row p-4 fw-light"><ul class="list-group"><li class="list-group-item list-group-item-primary">Vedi anche</li><li class="list-group-item list-group-item-action"><a href="bip-118-anyprevout.html">BIP 118 (ANYPREVOUT)</a></li><li class="list-group-item list-group-item-action"><a href="hash.html">Hash</a></li><li class="list-group-item list-group-item-action"><a href="signature.html">Signature</a> Firma</li><li class="list-group-item list-group-item-action"><a href="tx.html">TX</a> (Transaction) Transazione</li></ul></div><hr/><p class="text-end fw-lighter"><span class="text-secondary">aggiornato il </span>2022-09-30</p></div></p></div></div></div></main><div class="container-fluid text-white bg-dark"><div class="container"><footer class="py-5"><div class="row"><div>Scarica il glossario: 
+<a href="glossario.pdf" class="text-white">pdf</a> 
+<a href="glossario.epub" class="text-white">epub</a></div><div class="row fs-6 fw-lighter">il Glossario Bitcoin in italiano è disponibile su ipfs: <ul><li><span><a href="https://shrill-water-3846.on.fleek.co/" class="text-white">tramite Fleek</a> <a href="https://docs.ipfs.io/how-to/websites-on-ipfs/introducing-fleek/" class="text-white">(cos'è Fleek?)</a></span></li></ul></div></div><div class="d-flex justify-content-between py-4 my-4 border-top"><a href="https://BitcoinItaliaNetwork.com" style="color: white;">Bitcoin Italia Network</a><a href="https://nostree.me/npub14yzptn3vkf4ravfl9dhu49pzqpsap3m5emze2e6v4tuyceht72eqkhzldt" style="color: white;">21 Milioni di chiacchiere</a><ul class="list-unstyled d-flex"><li class="ms-3"><a href="https://t.me/+iCd-GTx2Sx04Mzk0" class="text-white"><i class="bi bi-telegram"></i></a></li><li class="ms-3"><a href="https://twitter.com/21MdiC_BTC" class="text-white"><i class="bi bi-twitter-x"></i></a></li><li class="ms-3"><a href="https://www.facebook.com/groups/1479005739604711" class="text-white"><i class="bi bi-facebook"></i></a></li><li class="ms-3"><a href="https://nostr.com/npub14yzptn3vkf4ravfl9dhu49pzqpsap3m5emze2e6v4tuyceht72eqkhzldt" class="text-white"><i class="bi bi-clipboard2-check"></i></a></li><li class="ms-3"><a href="https://www.threads.net/@21mdic.btc" class="text-white"><i class="bi bi-threads"></i></a></li></ul></div></footer></div></div></div><script src="bootstrap-5.2.0-dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script></body></html>

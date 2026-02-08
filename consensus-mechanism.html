@@ -1,0 +1,96 @@
+<!doctype html>
+<html><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>Consensus Mechanism Meccanismo di Consenso  - Glossario Bitcoin</title><link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"/><link href="bootstrap-5.2.0-dist/css/bootstrap.min.css" rel="stylesheet"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"/><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/4.1.5/css/flag-icons.min.css" integrity="sha512-UwbBNAFoECXUPeDhlKR3zzWU3j8ddKIQQsDOsKhXQGdiB5i3IHEXr9kXx82+gaHigbNKbTDp3VY/G6gZqva6ZQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/></head><body><div><header style="background: #ff9300;"><header class="p-4 bg-white flex flex-col lg:flex-row justify-between items-center"><div><a href="https://bitcoinitalianetwork.com/" class="text-lg"><span class="font-bold text-black"><span class="bg-green-500">&nbsp;₿itcoin</span><span>Italia</span><span class="bg-red-500 text-white">Network&nbsp;</span></span></a></div></header></header><div class="container"><nav><ol class="breadcrumb"><li class="breadcrumb-item"><a href="https://bitcoinitalianetwork.com/">Home</a></li><li class="breadcrumb-item"><a href="https://glossario.bitcoinitalianetwork.com/">Glossario</a></li><li class="breadcrumb-item"><a href="livello_intermedio.html">intermedio</a></li><li class="breadcrumb-item"><a href="intermedio_tecnologia.html">tecnologia</a></li></ol></nav></div><main><div class="container"><div class="card"><div class="card-body"><h5 class="card-body"><div><p><span class="flag-icon flag-icon-gb"></span><span> </span>Consensus Mechanism</p><p><span class="flag-icon flag-icon-it"></span><span> </span>Meccanismo di Consenso</p></div></h5><p class="card-text"><div><p><span class="text-secondary">Difficoltà: </span><a href="livello_intermedio.html" class="badge bg-primary">intermedio</a></p><p><span class="text-secondary">Argomento: </span><span class="badge rounded-pill bg-success">tecnologia</span></p><hr/><p class="fw-bold">DEFINIZIONE</p><section><p class="fs-5"><p>È un sistema per ottenere un consenso tra i partecipanti ad una rete sullo stato o sui dati.</p>
+<p>I sistemi distribuiti decentralizzati, come Bitcoin, affrontano una sfida fondamentale: come raggiungere un accordo (consenso) sullo stato condiviso del sistema tra partecipanti indipendenti, potenzialmente non fidati e geograficamente dispersi, in assenza di un'autorità centrale.</p>
+<p>Bitcoin risolve questo problema, noto anche come il <a href="byzantine-generals-problem.html">Problema dei Generali Bizantini</a>, attraverso una combinazione innovativa di crittografia a chiave pubblica, un meccanismo di <a href="pow.html">proof-of-work</a>, incentivi economici e un insieme definito di regole protocollari.<br />
+Questo approccio permette a nodi disconnessi di seguire una direzione comune e mantenere un registro pubblico distribuito e immutabile, la blockchain, senza la necessità di istruzioni centralizzate.</p>
+<p>Per garantire l'ordine, la sicurezza e la coerenza all'interno di questa rete decentralizzata, è essenziale disporre di regole chiare che governino il comportamento dei partecipanti.</p>
+<p>Tuttavia, non tutte le regole nel protocollo Bitcoin hanno lo stesso scopo, ambito di applicazione o livello di rigidità.<br />
+È quindi necessario distinguere nettamente tra:</p>
+<ul>
+<li><a href="consensus-rules.html">Consensus rules</a>, regole di consensus: le regole che definiscono la validità intrinseca delle transazioni e dei blocchi che compongono il registro condiviso</li>
+<li><a href="policy-rules.html">Policy rules</a>: le regole che governano il comportamento locale dei singoli nodi, la gestione delle risorse e l'interazione nella rete.</li>
+</ul>
+<p>Comprendere questa distinzione è cruciale per afferrare appieno il funzionamento interno, la sicurezza e le dinamiche economiche di Bitcoin.</p>
+<p>La distinzione tra "consensus" e "policy" è ampiamente accettata e utilizzata, specialmente in riferimento all'implementazione di riferimento Bitcoin Core.</p>
+<p>Secondo l'interpretazione prevalente nel contesto Bitcoin, la modifica delle Consensus rules e quindi di qualsiasi regola che influenzi la validità dei blocchi o delle transazioni richiede un aggiornamento coordinato dei partecipanti della rete (<a href="soft-fork.html">soft fork</a> o <a href="hard-fork.html">hard fork</a>) e non può essere soggetta a cambiamenti discrezionali da parte dei miner.</p>
+<p>La tabella seguente riassume i punti chiave di distinzione tra Consensus rules e Policy rules:</p>
+<table>
+<thead>
+<tr>
+<th>Caratteristica</th>
+<th>Consensus rules</th>
+<th>Policy rules</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Ambito di Applicazione</strong></td>
+<td>Intera Rete</td>
+<td>Singolo Nodo</td>
+</tr>
+<tr>
+<td><strong>Obbligatorietà</strong></td>
+<td>Obbligatorie per tutti i nodi partecipanti</td>
+<td>Configurabili, spesso opzionali (default ampiamente usati)</td>
+</tr>
+<tr>
+<td><strong>Meccanismo di Enforcement</strong></td>
+<td>Validazione di blocchi e transazioni da parte di tutti i nodi</td>
+<td>Controlli locali prima dell'accettazione/relay nella <a href="mempool.html">mempool</a></td>
+</tr>
+<tr>
+<td><strong>Conseguenze Violazione</strong></td>
+<td>Transazione/Blocco rigettato dalla rete; potenziale <a href="chain-split.html">chain split</a></td>
+<td>Transazione rigettata/scartata localmente; non inoltrata</td>
+</tr>
+<tr>
+<td><strong>Flessibilità/Mutabilità</strong></td>
+<td>Molto bassa; richiede hard/soft fork</td>
+<td>Alta; configurabile dall'operatore del nodo/aggiornamenti sw</td>
+</tr>
+<tr>
+<td><strong>Scopo Primario</strong></td>
+<td>Definire validità del <a href="ledger.html">registro</a>, prevenire <a href="double-spend.html">double-spending</a></td>
+<td>Gestire risorse nodo, prevenire <a href="spam.html">spam</a>, prioritizzare <a href="fee.html">commissioni</a></td>
+</tr>
+<tr>
+<td><strong>Governa</strong></td>
+<td>Stato confermato (Blockchain)</td>
+<td>Stato non confermato (Mempool) &amp; Relay P2P</td>
+</tr>
+<tr>
+<td><strong>Fonte di Autorità</strong></td>
+<td>Specifiche del Protocollo &amp; Accordo di Rete</td>
+<td>Configurazione Software del Nodo</td>
+</tr>
+<tr>
+<td><strong>Esempi</strong></td>
+<td>PoW, Ricompensa Blocco, Firme, Max <a href="block-size.html">Block Size</a></td>
+<td><a href="minrelaytxfee.html">minrelaytxfee</a>, maxmempool, <a href="rbf.html">RBF</a>, Limite <a href="dust.html">Dust</a>, Standard</td>
+</tr>
+</tbody>
+</table>
+<p>Questa tabella evidenzia come le Consensus rules stabiliscano la "verità" oggettiva e condivisa della blockchain, mentre le Policy rules gestiscano il flusso "soggettivo" e locale delle transazioni in attesa di diventare parte di quella verità.  </p>
+<p>Un aspetto interessante emerge da questo confronto: mentre le Consensus rules mirano a un accordo assoluto e universale, le Policy rules abbracciano la variazione locale come una necessità pratica per operare in una rete eterogenea con risorse finite. La rete Bitcoin è composta da nodi con hardware, connessioni di rete e tolleranze ai costi operativi molto diversi. Imporre regole identiche e rigide sull'uso delle risorse (come una dimensione fissa della mempool per tutti) potrebbe escludere partecipanti con meno risorse o risultare inefficiente per quelli con capacità maggiori. Le Policy rules permettono a ciascun nodo di impostare limiti locali basati sulle proprie capacità e priorità. Questa flessibilità locale consente alla rete di funzionare nonostante l'eterogeneità, ma al costo intrinseco di avere mempool frammentate e non perfettamente sincronizzate. Si può quindi considerare la policy come un' "imperfezione necessaria": la mancanza di una singola mempool globale è un compromesso accettato in cambio della resilienza, dell'efficienza e dell'accessibilità per una gamma più ampia di partecipanti. La policy agisce come un meccanismo tampone che permette ai nodi di partecipare secondo le proprie possibilità, mentre il consensus fornisce la verità fondamentale e ultima su cui tutti devono concordare.</p>
+<h4>Relazione Simbiotica: Come la Policy Supporta il Consensus</h4>
+<p>Nonostante le loro nette differenze, le Consensus rules e le Policy rules non operano in isolamento. Esiste una relazione simbiotica in cui le policy agiscono come un livello preparatorio, di filtraggio e di gestione cruciale che supporta e facilita il funzionamento del meccanismo di consensus sottostante.</p>
+<p>L'interfaccia primaria dove questa interazione avviene è la mempool. La mempool è l'area di attesa dinamica dove le policy vengono applicate. Funziona come un buffer tra le transazioni grezze trasmesse sulla rete P2P e la loro potenziale inclusione in un blocco, che è un evento governato dal consensus.</p>
+<p>Le policy supportano il consensus attraverso diversi meccanismi:</p>
+<ul>
+<li><strong>Filtraggio dello Spam</strong>: Policy come minrelaytxfee e i limiti "dust" impediscono che il livello di consensus (cioè i miner che assemblano i blocchi) venga sommerso da un volume eccessivo di transazioni economicamente insignificanti o potenzialmente dannose. Questo preserva le risorse dei nodi e dei miner per l'elaborazione di attività economiche valide.</li>
+<li><strong>Prioritizzazione per i Miner</strong>: Le policy basate sulle commissioni (priorità a sat/vB elevati, RBF per aumentare le commissioni) aiutano i miner, che sono attori economicamente razionali, a selezionare in modo efficiente le transazioni dalla loro mempool che massimizzano i loro profitti (commissioni raccolte). Questo allinea gli incentivi economici dei miner con la funzione di conferma delle transazioni della rete e, di fatto, ordina le transazioni presentate per l'inclusione nel blocco a livello di consensus.</li>
+<li><em>Protezione delle Risorse</em>: Limiti come maxmempool assicurano che i nodi non esauriscano la memoria a causa di un accumulo eccessivo di transazioni non confermate, permettendo loro di rimanere operativi e continuare a partecipare alla validazione e propagazione dei blocchi, che sono attività essenziali per il consensus.</li>
+<li><em>Facilitazione della Validazione</em>: Inoltrando prevalentemente transazioni "standard", le policy aiutano a garantire che i miner ricevano transazioni che hanno un'alta probabilità di superare rapidamente i controlli di validità del consensus. Anche se imperfetta, una certa coerenza tra le mempool dei nodi può anche contribuire a una validazione più rapida dei nuovi blocchi ricevuti.</li>
+</ul>
+<p>È fondamentale comprendere che i miner tipicamente costruiscono i loro blocchi candidati selezionando transazioni dalla propria mempool locale, la quale è stata popolata e filtrata secondo le proprie policy (o quelle predefinite del software che utilizzano). Pertanto, le policy adottate dai nodi e dai miner in tutta la rete influenzano collettivamente la composizione dei blocchi che vengono poi convalidati dal consensus, anche se le policy stesse non fanno parte delle Consensus rules.</p>
+<p>Questa interazione ha un impatto diretto sulla formazione del <strong>mercato delle commissioni</strong>. Mentre le Consensus rules definiscono semplicemente che le commissioni possono esistere (come differenza tra input e output) , sono le Policy rules a definire come i nodi trattano le transazioni in base alle commissioni offerte (commissione minima di relay, prioritizzazione per fee rate, espulsione dalla mempool per basse commissioni). I miner, guidati dal profitto, selezionano le transazioni a commissione più alta dalle loro mempool filtrate dalle policy. Gli utenti, osservando i tempi di conferma e la congestione della mempool (che è influenzata dalle policy in atto sulla rete), aggiustano le commissioni che offrono per le loro transazioni. Questa interazione dinamica tra offerte degli utenti, policy dei nodi e selezione dei miner costituisce il mercato delle commissioni. Le Policy rules sono, di fatto, il motore operativo di questo mercato, che è essenziale per allocare lo spazio limitato nei blocchi e per fornire un incentivo economico ai miner, soprattutto man mano che il sussidio di blocco diminuisce nel tempo a causa degli halving.</p>
+<p>Infine, sebbene la violazione delle policy non invalidi i blocchi, la comprensione e la potenziale manipolazione delle dinamiche della mempool attraverso le policy possono rappresentare una superficie di attacco indiretta. Ad esempio, attacchi come il "transaction pinning" (dove si crea una catena di transazioni che impedisce a una transazione target di essere sostituita tramite RBF) o lo sfruttamento di interazioni complesse tra le regole RBF e i limiti su antenati/discendenti potrebbero ostacolare la capacità di specifici utenti o applicazioni (come i protocolli di secondo livello) di ottenere conferme tempestive. Attori malintenzionati con una profonda conoscenza delle policy dei nodi potrebbero ottenere un vantaggio o disturbare l'esperienza di altri utenti. Anche se questo non infrange la validità del consensus, può influire sulla liveness (capacità di ottenere conferma) o sull' utilità percepita della rete per alcuni partecipanti. Questo è uno dei motivi per cui la progettazione delle policy è un'area attiva di ricerca e sviluppo (come dimostra la proposta Cluster Mempool ), poiché ha implicazioni significative per l'usabilità e la sicurezza a livello applicativo, anche se non modifica le regole fondamentali del consensus.</p>
+<h4>Ruoli Distinti, Scopo Unificato</h4>
+<p>In sintesi, il funzionamento robusto e ordinato della rete Bitcoin si basa su due insiemi distinti ma profondamente interconnessi di regole: le Consensus rules e le Policy rules.</p>
+<p>Le Consensus rules formano il fondamento immutabile e universalmente applicato del protocollo. Definiscono cosa costituisce una transazione valida e un blocco valido, garantendo l'integrità del registro distribuito, prevenendo il double-spending e assicurando che tutti i partecipanti onesti convergano su un'unica storia condivisa della blockchain. Sono il cuore della sicurezza e dell'affidabilità di Bitcoin, applicate rigorosamente da ogni full node e modificabili solo attraverso processi di aggiornamento complessi e consensuali (fork).</p>
+<p>Le Policy rules, d'altra parte, operano a un livello diverso. Sono meccanismi locali, flessibili e configurabili che i singoli nodi utilizzano per gestire le proprie risorse, filtrare il traffico di transazioni non confermate nella mempool e facilitare il processo di selezione delle transazioni da parte dei miner. Proteggono i nodi dallo spam e dagli attacchi DoS, contribuiscono a formare il mercato delle commissioni e forniscono un'interfaccia pratica tra il flusso caotico delle transazioni P2P e l'ordine rigoroso imposto dal consensus.</p>
+<p>Le differenze chiave risiedono nel loro ambito (rete vs. nodo), obbligatorietà (mandatorie vs. configurabili), conseguenze della violazione (invalidità a livello di rete vs. rifiuto locale) e mutabilità (difficile vs. facile da cambiare).</p>
+<p>Tuttavia, questa netta distinzione non implica isolamento. Esiste una forte interdipendenza: il consensus, per funzionare efficientemente su larga scala, si affida al filtraggio, alla prioritizzazione e alla gestione delle risorse operate dalle policy a livello di mempool. Le policy danno forma pratica ai requisiti astratti del consensus, agendo come un sistema immunitario decentralizzato che protegge il nucleo vitale del protocollo.
+Una comprensione approfondita di entrambe le categorie di regole – sia le fondamenta incrollabili del consensus sia le dinamiche flessibili delle policy – è quindi essenziale per chiunque desideri comprendere a fondo, utilizzare in modo sicuro, costruire applicazioni o analizzare criticamente la rete Bitcoin e le sue complesse interazioni tecniche ed economiche.</p></p></section><div class="row p-4 fw-light"><ul class="list-group"><li class="list-group-item list-group-item-primary">Vedi anche</li><li class="list-group-item list-group-item-action"><a href="policy-rules.html">Policy rules</a></li><li class="list-group-item list-group-item-action"><a href="consensus-rules.html">Consensus Rules</a> Regole di consenso</li><li class="list-group-item list-group-item-action"><a href="bft.html">BFT</a> (Byzantine Fault Tolerance)</li><li class="list-group-item list-group-item-action"><a href="byzantine-generals-problem.html">Byzantine Generals’ Problem</a> Problema dei generali bizantini</li><li class="list-group-item list-group-item-action"><a href="nakamoto-consensus.html">Nakamoto Consensus</a> Consenso di Nakamoto</li><li class="list-group-item list-group-item-action"><a href="nakamoto-consensus.html">Nakamoto Consensus</a> Consenso di Nakamoto</li><li class="list-group-item list-group-item-action"><a href="pos.html">PoS</a> (Proof-of-Stake)</li><li class="list-group-item list-group-item-action"><a href="pow.html">PoW</a> (Proof-of-Work)</li></ul></div><hr/><p class="text-end fw-lighter"><span class="text-secondary">aggiornato il </span>2022-08-26</p></div></p></div></div></div></main><div class="container-fluid text-white bg-dark"><div class="container"><footer class="py-5"><div class="row"><div>Scarica il glossario: 
+<a href="glossario.pdf" class="text-white">pdf</a> 
+<a href="glossario.epub" class="text-white">epub</a></div><div class="row fs-6 fw-lighter">il Glossario Bitcoin in italiano è disponibile su ipfs: <ul><li><span><a href="https://shrill-water-3846.on.fleek.co/" class="text-white">tramite Fleek</a> <a href="https://docs.ipfs.io/how-to/websites-on-ipfs/introducing-fleek/" class="text-white">(cos'è Fleek?)</a></span></li></ul></div></div><div class="d-flex justify-content-between py-4 my-4 border-top"><a href="https://BitcoinItaliaNetwork.com" style="color: white;">Bitcoin Italia Network</a><a href="https://nostree.me/npub14yzptn3vkf4ravfl9dhu49pzqpsap3m5emze2e6v4tuyceht72eqkhzldt" style="color: white;">21 Milioni di chiacchiere</a><ul class="list-unstyled d-flex"><li class="ms-3"><a href="https://t.me/+iCd-GTx2Sx04Mzk0" class="text-white"><i class="bi bi-telegram"></i></a></li><li class="ms-3"><a href="https://twitter.com/21MdiC_BTC" class="text-white"><i class="bi bi-twitter-x"></i></a></li><li class="ms-3"><a href="https://www.facebook.com/groups/1479005739604711" class="text-white"><i class="bi bi-facebook"></i></a></li><li class="ms-3"><a href="https://nostr.com/npub14yzptn3vkf4ravfl9dhu49pzqpsap3m5emze2e6v4tuyceht72eqkhzldt" class="text-white"><i class="bi bi-clipboard2-check"></i></a></li><li class="ms-3"><a href="https://www.threads.net/@21mdic.btc" class="text-white"><i class="bi bi-threads"></i></a></li></ul></div></footer></div></div></div><script src="bootstrap-5.2.0-dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script></body></html>

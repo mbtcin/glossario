@@ -1,0 +1,76 @@
+<!doctype html>
+<html><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>Timelock/Locktime  - Glossario Bitcoin</title><link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"/><link href="bootstrap-5.2.0-dist/css/bootstrap.min.css" rel="stylesheet"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"/><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/4.1.5/css/flag-icons.min.css" integrity="sha512-UwbBNAFoECXUPeDhlKR3zzWU3j8ddKIQQsDOsKhXQGdiB5i3IHEXr9kXx82+gaHigbNKbTDp3VY/G6gZqva6ZQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/></head><body><div><header style="background: #ff9300;"><header class="p-4 bg-white flex flex-col lg:flex-row justify-between items-center"><div><a href="https://bitcoinitalianetwork.com/" class="text-lg"><span class="font-bold text-black"><span class="bg-green-500">&nbsp;₿itcoin</span><span>Italia</span><span class="bg-red-500 text-white">Network&nbsp;</span></span></a></div></header></header><div class="container"><nav><ol class="breadcrumb"><li class="breadcrumb-item"><a href="https://bitcoinitalianetwork.com/">Home</a></li><li class="breadcrumb-item"><a href="https://glossario.bitcoinitalianetwork.com/">Glossario</a></li><li class="breadcrumb-item"><a href="livello_avanzato.html">avanzato</a></li><li class="breadcrumb-item"><a href="avanzato_tecnologia.html">tecnologia</a></li></ol></nav></div><main><div class="container"><div class="card"><div class="card-body"><h5 class="card-body"><div><p><span class="flag-icon flag-icon-gb"></span><span> </span>Timelock/Locktime</p><div></div></div></h5><p class="card-text"><div><p><span class="text-secondary">Difficoltà: </span><a href="livello_avanzato.html" class="badge bg-primary">avanzato</a></p><p><span class="text-secondary">Argomento: </span><span class="badge rounded-pill bg-success">tecnologia</span></p><hr/><p class="fw-bold">DEFINIZIONE</p><section><p class="fs-5"><p>Timelock è una caratteristica che consente a Bitcoin di funzionare come denaro programmabile, impostando delle condizioni per cui una transazione viene elaborata solo in un certo momento o blocco della blockchain.
+Sono dei vincoli che impediscono che una transazione o la spesa di un output sia confermata prima di un tempo di maturazione o di un <a href="block-height.html">block height</a>.</p>
+<p>Un timelock permette di creare una transazione Bitcoin tale che il destinatario degli output non possa spenderli per un tempo specificato.</p>
+<p>Il meccanismo di timelock è stato inizialmente inserito da Satoshi Nakamoto nel campo nLockTime.</p>
+<p>Attualmente ci sono 4 tipi di timelock per Bitcoin:</p>
+<ul>
+<li>nLocktime</li>
+<li>nSequence</li>
+<li><a href="cltv.html">CLTV CheckLockTimeVerify</a></li>
+<li><a href="bip-112-csv.html">CSV CheckSquenceVerify</a></li>
+</ul>
+<p>I timelock hanno 3 attributi:</p>
+<ul>
+<li><strong>Posizione</strong>:  a livello di <a href="tx.html">transazione</a> o a livello di <a href="script.html">script</a></li>
+<li><strong>Orientamento</strong>: assoluto o relativo</li>
+<li><strong>Metrica</strong>: block height (numero o altezza del blocco) o <a href="timestamp.html">timestamp</a></li>
+</ul>
+<p>Specchietto riassuntivo:</p>
+<table>
+<thead>
+<tr>
+<th>timelock</th>
+<th style="text-align: center;">Posizione</th>
+<th style="text-align: center;">Orientamento</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>nSequence</em></td>
+<td style="text-align: center;">transazione</td>
+<td style="text-align: center;">Relativo</td>
+</tr>
+<tr>
+<td><em>nLocktime</em></td>
+<td style="text-align: center;">transazione</td>
+<td style="text-align: center;">Assoluto</td>
+</tr>
+<tr>
+<td><em>CSV</em></td>
+<td style="text-align: center;">script</td>
+<td style="text-align: center;">Relativo</td>
+</tr>
+<tr>
+<td><em>CLTV</em></td>
+<td style="text-align: center;">script</td>
+<td style="text-align: center;">Assoluto</td>
+</tr>
+</tbody>
+</table>
+<h3>Posizione</h3>
+<p>I timelock possono essere impostati nelle transazioni, e possono anche essere inclusi negli script.</p>
+<p>Sono molto simili, ma svolgono funzioni completamente diverse.
+Se sono impostati a livello di transazione, i timelock non possono essere convalidati fino a che non si raggiunge un certo momento o una block height definita, sebbene le loro firme e script siano validi.
+I timelock a livello di script sono realizzati inserendo negli script delle condizioni che determinano quando uno script è valido, e le condizioni possono essere impostate su tutte le transazioni che spendono un output.</p>
+<p>nLockTime e nSequence operano a livello di transazione, mentre CheckLockTimeVerify e CheckSquenceVerify operano a livello di script.</p>
+<h3>Orientamento</h3>
+<p>Gli orari dei timelock possono essere <strong>assoluti</strong> o <strong>relativi</strong>.</p>
+<p>Quelli assoluti consentono di definire il lock secondo uno specifico orario, quindi si può scegliere il momento esatto in cui terminerà il blocco.
+Quelli relativi consentono di definire un certo lasso di tempo che deve trascorrere a partire dalla conferma degli output precedenti.
+Entrambe le opzioni sono estremamente utili per definire gli intervalli di tempo necessari affinché una transazione venga elaborata dalla rete Bitcoin.</p>
+<p>nLockTime e CheckLockTimeVerify sono timelock assoluti, mentre nSequence e CheckSquenceVerify sono timelock relativi</p>
+<h3>Metrica</h3>
+<p>In Bitcoin ci sono due modi per misurare il tempo: il <strong>block height</strong> (numero di blocco) e <strong>timestamp</strong>.</p>
+<p>Quando si imposta un blocco temporale basato su un block height, i miner aspettano di raggiungere quel numero di blocco per poter validare e confermare l'operazione e includerla in un nuovo blocco.</p>
+<p>Nel caso sia impostato il timestamp, i miner attendono fino ad arrivare al momento indicato dal timestamp. Il timestamp è espresso secondo il formato del timestamp Unix.</p>
+<h2>Formato del campo</h2>
+<p>Il campo Locktime è un campo a 4 byte (32 bit) che può essere espresso in due modi:</p>
+<ul>
+<li>Come un blocco numerico: Se il valore di Locktime è inferiore a 500 milioni, viene interpretato come il numero di blocco a partire dal quale la transazione può essere inserita nella blockchain. Ad esempio, se il valore di Locktime è 100, la transazione non potrà essere inserita nella blockchain prima del blocco numero 100.</li>
+<li>Come un timestamp: se il valore di Locktime è uguale o superiore a 500 milioni, viene interpretato come un timestamp UNIX (numero di secondi trascorsi dal 1 gennaio 1970). Ad esempio, se il valore di Locktime è 1498870928, la transazione non potrà essere inclusa nella blockchain prima delle 14:48:48 UTC del 1 luglio 2017.</li>
+</ul>
+<p>Il campo Locktime è facoltativo e può essere omesso se non è necessario. Se Locktime non è presente nella transazione, la transazione può essere inserita immediatamente nella blockchain.</p>
+<p>Se si imposta un nLocktime futuro, la transazione non potrà essere inserita nella blockchain fino a quel momento specifico, ma non deve neanche essere trasmessa agli altri nodi ma deve essere conservata: se si tenta di inviare una transazione con un nLocktime futuro alla rete Bitcoin prima del momento specificato, la transazione verrà respinta come non valida dal primo nodo che la riceve e non verrà trasmessa ad altri nodi.</p></p></section><div class="row p-4 fw-light"><ul class="list-group"><li class="list-group-item list-group-item-primary">Vedi anche</li><li class="list-group-item list-group-item-action"><a href="bip-112-csv.html">BIP 112 CSV</a> (Check Sequence Verify)</li><li class="list-group-item list-group-item-action"><a href="bip-113-median-time-past.html">BIP 113 Median time-past</a></li><li class="list-group-item list-group-item-action"><a href="bip-68-nsequence.html">BIP 68 nSequence</a></li><li class="list-group-item list-group-item-action"><a href="block-height.html">Block height</a> Altezza del blocco</li><li class="list-group-item list-group-item-action"><a href="cltv.html">CLTV</a> (Check Lock Time Verify)</li><li class="list-group-item list-group-item-action"><a href="htlc.html">HTLC</a> (Hash Timelock Contracts)</li><li class="list-group-item list-group-item-action"><a href="nlocktime.html">nLockTime</a></li><li class="list-group-item list-group-item-action"><a href="ptlc.html">PTLC</a> (Point Time Locked Contracts)</li></ul></div><hr/><p class="text-end fw-lighter"><span class="text-secondary">aggiornato il </span>2022-03-15</p></div></p></div></div></div></main><div class="container-fluid text-white bg-dark"><div class="container"><footer class="py-5"><div class="row"><div>Scarica il glossario: 
+<a href="glossario.pdf" class="text-white">pdf</a> 
+<a href="glossario.epub" class="text-white">epub</a></div><div class="row fs-6 fw-lighter">il Glossario Bitcoin in italiano è disponibile su ipfs: <ul><li><span><a href="https://shrill-water-3846.on.fleek.co/" class="text-white">tramite Fleek</a> <a href="https://docs.ipfs.io/how-to/websites-on-ipfs/introducing-fleek/" class="text-white">(cos'è Fleek?)</a></span></li></ul></div></div><div class="d-flex justify-content-between py-4 my-4 border-top"><a href="https://BitcoinItaliaNetwork.com" style="color: white;">Bitcoin Italia Network</a><a href="https://nostree.me/npub14yzptn3vkf4ravfl9dhu49pzqpsap3m5emze2e6v4tuyceht72eqkhzldt" style="color: white;">21 Milioni di chiacchiere</a><ul class="list-unstyled d-flex"><li class="ms-3"><a href="https://t.me/+iCd-GTx2Sx04Mzk0" class="text-white"><i class="bi bi-telegram"></i></a></li><li class="ms-3"><a href="https://twitter.com/21MdiC_BTC" class="text-white"><i class="bi bi-twitter-x"></i></a></li><li class="ms-3"><a href="https://www.facebook.com/groups/1479005739604711" class="text-white"><i class="bi bi-facebook"></i></a></li><li class="ms-3"><a href="https://nostr.com/npub14yzptn3vkf4ravfl9dhu49pzqpsap3m5emze2e6v4tuyceht72eqkhzldt" class="text-white"><i class="bi bi-clipboard2-check"></i></a></li><li class="ms-3"><a href="https://www.threads.net/@21mdic.btc" class="text-white"><i class="bi bi-threads"></i></a></li></ul></div></footer></div></div></div><script src="bootstrap-5.2.0-dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script></body></html>

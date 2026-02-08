@@ -1,0 +1,70 @@
+<!doctype html>
+<html><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>Block header  - Glossario Bitcoin</title><link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"/><link href="bootstrap-5.2.0-dist/css/bootstrap.min.css" rel="stylesheet"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"/><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/4.1.5/css/flag-icons.min.css" integrity="sha512-UwbBNAFoECXUPeDhlKR3zzWU3j8ddKIQQsDOsKhXQGdiB5i3IHEXr9kXx82+gaHigbNKbTDp3VY/G6gZqva6ZQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/></head><body><div><header style="background: #ff9300;"><header class="p-4 bg-white flex flex-col lg:flex-row justify-between items-center"><div><a href="https://bitcoinitalianetwork.com/" class="text-lg"><span class="font-bold text-black"><span class="bg-green-500">&nbsp;₿itcoin</span><span>Italia</span><span class="bg-red-500 text-white">Network&nbsp;</span></span></a></div></header></header><div class="container"><nav><ol class="breadcrumb"><li class="breadcrumb-item"><a href="https://bitcoinitalianetwork.com/">Home</a></li><li class="breadcrumb-item"><a href="https://glossario.bitcoinitalianetwork.com/">Glossario</a></li><li class="breadcrumb-item"><a href="livello_avanzato.html">avanzato</a></li><li class="breadcrumb-item"><a href="avanzato_tecnologia.html">tecnologia</a></li></ol></nav></div><main><div class="container"><div class="card"><div class="card-body"><h5 class="card-body"><div><p><span class="flag-icon flag-icon-gb"></span><span> </span>Block header</p><div></div></div></h5><p class="card-text"><div><p><span class="text-secondary">Difficoltà: </span><a href="livello_avanzato.html" class="badge bg-primary">avanzato</a></p><p><span class="text-secondary">Argomento: </span><span class="badge rounded-pill bg-success">tecnologia</span></p><hr/><p class="fw-bold">DEFINIZIONE</p><section><p class="fs-5"><p>La <a href="blockchain.html">blockchain</a> è costituita da una serie di <a href="block.html">blocchi</a> che vengono utilizzati per memorizzare le informazioni relative alle transazioni che avvengono su una rete di blockchain. Ciascuno dei blocchi contiene un block header, un'intestazione unica e ogni blocco è identificato individualmente dall'hash del Block Header.</p>
+<p>CONCETTI CHIAVE</p>
+<ul>
+<li>I block header identificano i singoli blocchi di una blockchain.</li>
+<li>Vengono sottoposti a hash nella proof of work. </li>
+<li>I blocchi sono stratificati verticalmente, a partire dal "blocco genesi".</li>
+<li>Ogni block header ha tre serie di metadati del blocco e più componenti individuali. </li>
+<li>Il numero di versione di Bitcoin aiuta a tenere traccia delle modifiche apportate al protocollo. </li>
+</ul>
+<p>Il Block Header è quella parte di un blocco che serve a descrivere il resto del blocco, è grande 40 byte e contiene i seguenti campi:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Dimensione</th>
+<th>Campo</th>
+<th>Descrizione</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">4</td>
+<td><a href="version.html">version</a></td>
+<td>Indica la versione del protocollo utilizzata per il blocco.</td>
+</tr>
+<tr>
+<td style="text-align: center;">32</td>
+<td><a href="hash.html">hash</a></td>
+<td>L'hash del blocco precedente che permette di creare la catena di blocchi.</td>
+</tr>
+<tr>
+<td style="text-align: center;">32</td>
+<td><a href="merkle-tree.html">merkle root</a></td>
+<td>La Merkle root delle transazioni incluse nel blocco.</td>
+</tr>
+<tr>
+<td style="text-align: center;">4</td>
+<td><a href="timestamp.html">timestamp</a></td>
+<td>L'oradi creazione del blocco impostata dal miner</td>
+</tr>
+<tr>
+<td style="text-align: center;">4</td>
+<td><a href="difficulty.html">difficoltà</a></td>
+<td>La difficoltà con la quale il blocco è stato minato</td>
+</tr>
+<tr>
+<td style="text-align: center;">4</td>
+<td><a href="nonce.html">nonce</a></td>
+<td>Un valore variabile usato dai miner per risolvere il puzzle di proof-of-work.</td>
+</tr>
+</tbody>
+</table>
+<p>La dimensione è indicata in Byte.</p>
+<p>In sostanza, il Block Header contiene i dati che definiscono il blocco, escluso l'elenco delle transazioni.</p>
+<p>I miner calcolano l'hash del Block Header nella loro attività di mining di un blocco valido. Questo è molto più efficiente dell'hashing dell'intero blocco, che può essere composto da migliaia di transazioni. Sarebbe molto più complicato per un miner cambiare il nonce e rieseguire un intero blocco di 2 MB per ogni tentativo. Si confronti con l'hashing del block header di Bitcoin, ad esempio, che hanno una lunghezza fissa di 80 byte.
+I block header sono ottime dal punto di vista del mining, ma grazie alle loro dimensioni ridotte sono ideali anche per i <a href="light-client.html">light client</a>. La blockchain di Bitcoin è troppo grande per essere memorizzata da dispositivi come gli smartphone. Se la catena avesse 100.000 blocchi da 1MB, si consumerebbero 100GB di spazio. Ma con le sole intestazioni degli stessi blocchi, si occuperebbero solo 0,008GB, ovvero 8MB.
+In questo modo, i dispositivi con meno larghezza di banda o spazio di archiviazione possono comunque eseguire un certo grado di convalida. Poiché la Merkle root incapsula tutte le transazioni, è possibile verificare in seguito se una transazione è stata inclusa in un determinato blocco. Questo ha un costo: l'utente deve comunque affidarsi a una terza parte per ottenere le informazioni necessarie. Detto questo, i light client sono preferibili a un sistema in cui gli utenti non effettuano alcuna verifica.</p>
+<p>I blocchi vengono disposti uno sopra l'altro, con il primo blocco come base, e crescono in <a href="block-height.html">altezza (Block height)</a>. </p>
+<p>Il primo blocco della catena è noto anche come "blocco genesi". Gli strati e la storia profonda di ogni sequenza sono uno degli elementi che rendono Bitcoin così sicuro.   </p>
+<p>Nell'ambito di un esercizio di mining standard, il block header viene ripetutamente modificato dai miner alterando il valore nonce. Attraverso questo esercizio, si effettua la Proof of Work, che aiuta i miner a essere ricompensati per il loro contributo al funzionamento regolare ed efficiente del sistema blockchain. </p>
+<p>Il Block Header contiene tre serie di metadati del blocco. Si tratta di una stringa lunga 80 byte, composta dal numero di versione di Bitcoin lungo 4 byte, dall'hash del blocco precedente lungo 32 byte, dalla Merkle root lunga 32 byte, dal <a href="timestamp.html">timestamp</a> del blocco lungo 4 byte, dal difficulty target del blocco lungo 4 byte e dal nonce usato dai miner lungo 4 byte. </p>
+<h5>Componenti del Block Header</h5>
+<p>Ognuno di questi componenti è fondamentale per creare un'intestazione accurata e affidabile.  </p>
+<p>L'identificatore principale di ogni singolo blocco è l'hash crittografico che contiene. Si tratta essenzialmente di un'impronta digitale, che viene creata eseguendo due volte l'hashing del Block Header attraverso l'algoritmo di hashing. </p>
+<p>Il numero di versione di Bitcoin è utile per tenere traccia delle modifiche e degli aggiornamenti del protocollo.</p>
+<p>L'hash del blocco precedente si collega al blocco precedente o al suo genitore, proteggendo in modo efficace la catena. </p>
+<p>La Merkle Tree è costituita da tutti gli hash delle transazioni all'interno della transazione. Non è così complicato come sembra, ogni hash è solo un ulteriore hash.  </p>
+<p>Il timestamp è incluso in modo che tutti coloro che i partecipanti siano in grado di vedere una registrazione permanente e codificata di quando si è verificato un particolare evento. In genere fornisce la data e l'ora del giorno di quel particolare evento e spesso è abbastanza preciso da rientrare in una frazione di secondo, ma è comunque impostata dal miner quindi non può essere considerata affidabile e a tal proposito vienee effettuata dai nodi una verifica tramite il <a href="bip-113-median-time-past.html">Median time-past</a>.</p></p></section><div class="row p-4 fw-light"><ul class="list-group"><li class="list-group-item list-group-item-primary">Vedi anche</li><li class="list-group-item list-group-item-action"><a href="bip-113-median-time-past.html">BIP 113 Median time-past</a></li><li class="list-group-item list-group-item-action"><a href="block.html">Block</a> Blocco</li><li class="list-group-item list-group-item-action"><a href="block-height.html">Block height</a> Altezza del blocco</li><li class="list-group-item list-group-item-action"><a href="blockchain.html">Blockchain</a> Catena di blocchi</li><li class="list-group-item list-group-item-action"><a href="difficulty.html">Difficulty</a> Difficoltà</li><li class="list-group-item list-group-item-action"><a href="hash.html">Hash</a></li><li class="list-group-item list-group-item-action"><a href="light-client.html">Light Client</a></li><li class="list-group-item list-group-item-action"><a href="merkle-tree.html">Merkle tree</a></li><li class="list-group-item list-group-item-action"><a href="nonce.html">Nonce</a></li><li class="list-group-item list-group-item-action"><a href="pow.html">PoW</a> (Proof-of-Work)</li><li class="list-group-item list-group-item-action"><a href="timestamp.html">Timestamp</a> Marca temporale</li></ul></div><hr/><p class="text-end fw-lighter"><span class="text-secondary">aggiornato il </span>2022-08-28</p></div></p></div></div></div></main><div class="container-fluid text-white bg-dark"><div class="container"><footer class="py-5"><div class="row"><div>Scarica il glossario: 
+<a href="glossario.pdf" class="text-white">pdf</a> 
+<a href="glossario.epub" class="text-white">epub</a></div><div class="row fs-6 fw-lighter">il Glossario Bitcoin in italiano è disponibile su ipfs: <ul><li><span><a href="https://shrill-water-3846.on.fleek.co/" class="text-white">tramite Fleek</a> <a href="https://docs.ipfs.io/how-to/websites-on-ipfs/introducing-fleek/" class="text-white">(cos'è Fleek?)</a></span></li></ul></div></div><div class="d-flex justify-content-between py-4 my-4 border-top"><a href="https://BitcoinItaliaNetwork.com" style="color: white;">Bitcoin Italia Network</a><a href="https://nostree.me/npub14yzptn3vkf4ravfl9dhu49pzqpsap3m5emze2e6v4tuyceht72eqkhzldt" style="color: white;">21 Milioni di chiacchiere</a><ul class="list-unstyled d-flex"><li class="ms-3"><a href="https://t.me/+iCd-GTx2Sx04Mzk0" class="text-white"><i class="bi bi-telegram"></i></a></li><li class="ms-3"><a href="https://twitter.com/21MdiC_BTC" class="text-white"><i class="bi bi-twitter-x"></i></a></li><li class="ms-3"><a href="https://www.facebook.com/groups/1479005739604711" class="text-white"><i class="bi bi-facebook"></i></a></li><li class="ms-3"><a href="https://nostr.com/npub14yzptn3vkf4ravfl9dhu49pzqpsap3m5emze2e6v4tuyceht72eqkhzldt" class="text-white"><i class="bi bi-clipboard2-check"></i></a></li><li class="ms-3"><a href="https://www.threads.net/@21mdic.btc" class="text-white"><i class="bi bi-threads"></i></a></li></ul></div></footer></div></div></div><script src="bootstrap-5.2.0-dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script></body></html>

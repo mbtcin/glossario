@@ -1,0 +1,70 @@
+<!doctype html>
+<html><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>P2PK Pay-to-Public-Key  - Glossario Bitcoin</title><link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"/><link href="bootstrap-5.2.0-dist/css/bootstrap.min.css" rel="stylesheet"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"/><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/4.1.5/css/flag-icons.min.css" integrity="sha512-UwbBNAFoECXUPeDhlKR3zzWU3j8ddKIQQsDOsKhXQGdiB5i3IHEXr9kXx82+gaHigbNKbTDp3VY/G6gZqva6ZQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/></head><body><div><header style="background: #ff9300;"><header class="p-4 bg-white flex flex-col lg:flex-row justify-between items-center"><div><a href="https://bitcoinitalianetwork.com/" class="text-lg"><span class="font-bold text-black"><span class="bg-green-500">&nbsp;₿itcoin</span><span>Italia</span><span class="bg-red-500 text-white">Network&nbsp;</span></span></a></div></header></header><div class="container"><nav><ol class="breadcrumb"><li class="breadcrumb-item"><a href="https://bitcoinitalianetwork.com/">Home</a></li><li class="breadcrumb-item"><a href="https://glossario.bitcoinitalianetwork.com/">Glossario</a></li><li class="breadcrumb-item"><a href="livello_intermedio.html">intermedio</a></li><li class="breadcrumb-item"><a href="intermedio_tecnologia.html">tecnologia</a></li></ol></nav></div><main><div class="container"><div class="card"><div class="card-body"><h5 class="card-body"><div><p><span class="flag-icon flag-icon-gb"></span><span> </span>P2PK</p><p class="fs-6"><span class="text-secondary">acronimo di: </span>Pay-to-Public-Key</p><div></div></div></h5><p class="card-text"><div><p><span class="text-secondary">Difficoltà: </span><a href="livello_intermedio.html" class="badge bg-primary">intermedio</a></p><p><span class="text-secondary">Argomento: </span><span class="badge rounded-pill bg-success">tecnologia</span></p><hr/><p class="fw-bold">DEFINIZIONE</p><section><p class="fs-5"><p>P2PK, Pay-to-Public-Key in italiano <em>Paga alla Chiave pubblica</em>, è il primo e più semplice metodo di pagamento su Bitcoin.</p>
+<p>Si tratta di un tipo di <a href="scriptpubkey.html">ScriptPubKey</a> (o <a href="locking-script.html">locking script</a>) che vincola la spesa dei bitcoin a una <a href="public-key.html">chiave pubblica</a> specifica.</p>
+<p>In questo caso, il pagamento non viene effettuato a un "indirizzo Bitcoin", ma direttamente a una chiave pubblica.</p>
+<h4>Storia e deprecazione</h4>
+<p>P2PK è stato introdotto da <a href="satoshi-nakamoto.html">Satoshi Nakamoto</a> nella prima versione di Bitcoin, ma è stato rapidamente deprecato a favore di <a href="p2pkh.html">P2PKH</a>. Quest'ultimo migliora la sicurezza e la privacy, sostituendo la chiave pubblica in chiaro con il suo hash.</p>
+<h4>Funzionamento</h4>
+<p>Una transazione P2PK è una transazione in cui gli input utilizzano la chiave pubblica in chiaro.<br />
+Ad esempio, se Alice invia 1 BTC a Bob in una transazione P2PK, include direttamente la chiave pubblica di Bob nella transazione. Per spendere questi bitcoin, Bob dovrà fornire una firma digitale generata con la sua <a href="private-key.html">chiave privata</a> corrispondente.  </p>
+<p>La chiave pubblica, derivata dalla chiave privata tramite <a href="ecc.html">crittografia a curva ellittica</a>, può essere rappresentata in diversi formati:</p>
+<ul>
+<li>
+<p><strong>Compressa</strong> (33 byte): contiene solo la coordinata x con un prefisso che indica la parità della coordinata y</p>
+</li>
+<li>
+<p><strong>Non compressa</strong> (65 byte): contiene sia la coordinata x che y</p>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Prefisso</th>
+<th style="text-align: center;">Contiene</th>
+<th style="text-align: center;">Lunghezza (byte)</th>
+<th style="text-align: center;">y</th>
+<th style="text-align: center;">formato compresso</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">02</td>
+<td style="text-align: center;">x</td>
+<td style="text-align: center;">33</td>
+<td style="text-align: center;">pari</td>
+<td style="text-align: center;">sì</td>
+</tr>
+<tr>
+<td style="text-align: center;">03</td>
+<td style="text-align: center;">x</td>
+<td style="text-align: center;">33</td>
+<td style="text-align: center;">dispari</td>
+<td style="text-align: center;">sì</td>
+</tr>
+<tr>
+<td style="text-align: center;">04</td>
+<td style="text-align: center;">x, y</td>
+<td style="text-align: center;">65</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">no</td>
+</tr>
+</tbody>
+</table>
+<p>Essendo la curva ellittica simmetrica rispetto all'asse x, nel formato compresso si memorizza solo x con l'indicazione della parità di y.</p>
+<p>Lo script ScriptPubKey P2PK ha la seguente forma:</p>
+<p><code>&lt;Chiave pubblica da inviare&gt; OP_CHECKSIG</code></p>
+<p>Per sbloccare i fondi, il destinatario deve fornire una firma digitale valida, inserita nello <a href="scriptsig.html">scriptSig</a>:</p>
+<p><code>&lt;SIGNATURE&gt; (Firma digitale valida)</code></p>
+<p>Un esempio dell'uso di P2PK è nella <a href="https://mempool.space/it/tx/f4184fc596403b9d638783cf57adfe4c75c605f6356fbc91338530e9831e9e16">prima transazione Bitcoin</a>, fatta il 12 gennaio 2009 da Satoshi a Hal Finney, presente nel <a href="https://mempool.space/it/block/00000000d1145790a8694403d4063f323d499e655c83426834d4ce2f8dd4a2ee">blocco 170</a>.</p>
+<p>Satoshi stesso decise di abbandonare P2PK al posto di P2PKH per due motivi:</p>
+<ul>
+<li>
+<p>La crittografia a curva ellittica è vulnerabile a una versione modificata dell'algoritmo di Shor, che può risolvere il problema del logaritmo discreto sulle curve ellittiche. In parole semplici, ciò significa che in futuro un computer (es. quantistico) potrebbe essere in grado di ricavare una chiave privata partendo da una chiave pubblica. Pubblicando la chiave pubblica solo quando le monete vengono spese (e assumendo che gli indirizzi non vengano riutilizzati), un attacco di questo tipo diventa inefficace.</p>
+</li>
+<li>
+<p>Poiché l'indirizzo è più piccolo (20 byte) della chiave pubblica, è più facile da stampare e più semplice da incorporare in supporti di archiviazione ridotti, come i codici QR.</p>
+</li>
+</ul>
+<p>P2PK è l'indirizzo che si vede più spesso nelle <a href="coinbase-transaction.html">transazioni coinbase</a> dei primi blocchi della blockchain. Ciò è dovuto al fatto che il miner originale <a href="bitcoin-core.html">Bitcoin Core</a> utilizzava P2PK per la ricompensa di blocco quando creava nuovi blocchi.</p></p></section><div><ul class="list-group  list-group-flush"><li class="list-group-item fw-bold">Link utili:</li><li class="list-group-item"><a href="https://mempool.space/it/tx/f4184fc596403b9d638783cf57adfe4c75c605f6356fbc91338530e9831e9e16">La prima transazione Bitcoin, Satoshi a Hal Finney, nella quale è stato usato P2PK</a></li></ul></div><div class="row p-4 fw-light"><ul class="list-group"><li class="list-group-item list-group-item-primary">Vedi anche</li><li class="list-group-item list-group-item-action"><a href="p2pkh.html">P2PKH</a> (Pay-to-Public-Key-Hash)</li><li class="list-group-item list-group-item-action"><a href="public-key.html">Public Key</a> Chiave pubblica</li><li class="list-group-item list-group-item-action"><a href="script.html">Script</a></li><li class="list-group-item list-group-item-action"><a href="scriptpubkey.html">ScriptPubKey</a></li></ul></div><hr/><p class="text-end fw-lighter"><span class="text-secondary">aggiornato il </span>2025-02-19</p></div></p></div></div></div></main><div class="container-fluid text-white bg-dark"><div class="container"><footer class="py-5"><div class="row"><div>Scarica il glossario: 
+<a href="glossario.pdf" class="text-white">pdf</a> 
+<a href="glossario.epub" class="text-white">epub</a></div><div class="row fs-6 fw-lighter">il Glossario Bitcoin in italiano è disponibile su ipfs: <ul><li><span><a href="https://shrill-water-3846.on.fleek.co/" class="text-white">tramite Fleek</a> <a href="https://docs.ipfs.io/how-to/websites-on-ipfs/introducing-fleek/" class="text-white">(cos'è Fleek?)</a></span></li></ul></div></div><div class="d-flex justify-content-between py-4 my-4 border-top"><a href="https://BitcoinItaliaNetwork.com" style="color: white;">Bitcoin Italia Network</a><a href="https://nostree.me/npub14yzptn3vkf4ravfl9dhu49pzqpsap3m5emze2e6v4tuyceht72eqkhzldt" style="color: white;">21 Milioni di chiacchiere</a><ul class="list-unstyled d-flex"><li class="ms-3"><a href="https://t.me/+iCd-GTx2Sx04Mzk0" class="text-white"><i class="bi bi-telegram"></i></a></li><li class="ms-3"><a href="https://twitter.com/21MdiC_BTC" class="text-white"><i class="bi bi-twitter-x"></i></a></li><li class="ms-3"><a href="https://www.facebook.com/groups/1479005739604711" class="text-white"><i class="bi bi-facebook"></i></a></li><li class="ms-3"><a href="https://nostr.com/npub14yzptn3vkf4ravfl9dhu49pzqpsap3m5emze2e6v4tuyceht72eqkhzldt" class="text-white"><i class="bi bi-clipboard2-check"></i></a></li><li class="ms-3"><a href="https://www.threads.net/@21mdic.btc" class="text-white"><i class="bi bi-threads"></i></a></li></ul></div></footer></div></div></div><script src="bootstrap-5.2.0-dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script></body></html>

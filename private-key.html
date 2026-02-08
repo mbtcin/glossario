@@ -1,0 +1,49 @@
+<!doctype html>
+<html><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>Private Key Chiave privata  - Glossario Bitcoin</title><link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"/><link href="bootstrap-5.2.0-dist/css/bootstrap.min.css" rel="stylesheet"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"/><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/4.1.5/css/flag-icons.min.css" integrity="sha512-UwbBNAFoECXUPeDhlKR3zzWU3j8ddKIQQsDOsKhXQGdiB5i3IHEXr9kXx82+gaHigbNKbTDp3VY/G6gZqva6ZQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/></head><body><div><header style="background: #ff9300;"><header class="p-4 bg-white flex flex-col lg:flex-row justify-between items-center"><div><a href="https://bitcoinitalianetwork.com/" class="text-lg"><span class="font-bold text-black"><span class="bg-green-500">&nbsp;₿itcoin</span><span>Italia</span><span class="bg-red-500 text-white">Network&nbsp;</span></span></a></div></header></header><div class="container"><nav><ol class="breadcrumb"><li class="breadcrumb-item"><a href="https://bitcoinitalianetwork.com/">Home</a></li><li class="breadcrumb-item"><a href="https://glossario.bitcoinitalianetwork.com/">Glossario</a></li><li class="breadcrumb-item"><a href="livello_base.html">base</a></li><li class="breadcrumb-item"><a href="base_tecnologia.html">tecnologia</a></li></ol></nav></div><main><div class="container"><div class="card"><div class="card-body"><h5 class="card-body"><div><p><span class="flag-icon flag-icon-gb"></span><span> </span>Private Key</p><p><span class="flag-icon flag-icon-it"></span><span> </span>Chiave privata</p></div></h5><p class="card-text"><div><p><span class="text-secondary">Difficoltà: </span><a href="livello_base.html" class="badge bg-primary">base</a></p><p><span class="text-secondary">Argomento: </span><span class="badge rounded-pill bg-success">tecnologia</span></p><hr/><p class="fw-bold">DEFINIZIONE</p><section><p class="fs-5"><p>Una chiave privata Bitcoin è codice che rappresenta l'accesso al controllo di un <a href="address.html">indirizzo Bitcoin</a>. In altre parole, la chiave privata è l'elemento che ti permette di spendere i fondi associati all'indirizzo Bitcoin.</p>
+<p>La chiave privata viene generalmente memorizzata nel <a href="wallet.html">wallet</a>, consente di firmare le <a href="tx.html">transazioni</a> e in questo modo rappresenta le credenziali digitali dei vostri bitcoin, e per certi versi potrebbe essere considerata come una password: chiunque sia in possesso di tale chiave privata potrà gestire quei fondi sulla <a href="blockchain.html">blockchain</a>.</p>
+<p>La chiave privata deve rimanere sempre segreta, perché rivelarla a terzi equivale a dare loro il controllo sui bitcoin protetti da quella chiave. Bisogna inoltre fare un backup, o salvare da qualche parte, la chiave privata affinché sia protetta da perdite accidentali, perché se viene persa non può essere recuperata e anche i fondi garantiti da essa sono persi per sempre.</p>
+<p>Dalla chiave privata viene derivata la <a href="public-key.html">chiave pubblica</a>.</p>
+<p>La chiave privata è un numero di solito generato in modo casuale.</p>
+<p>La chiave privata bitcoin è solo un numero. Si può scegliere la propria chiavi privata in modo casuale anche semplicemente usando solo una moneta, una matita e un foglio: si lancia una moneta 256 volte per scegliere i valori 0 o 1 delle 256 cifre binarie di una chiave privata casuale che si possono utilizzare in un wallet bitcoin. La chiave pubblica può quindi essere generata dalla chiave privata.</p>
+<h4>Formati della chiave privata</h4>
+<p>La chiave privata può essere rappresentata in diversi formati, che corrispondono tutti allo stesso numero a 256 bit. Le rappresentazioni delle chiavi private (formati di codifica) mostrano tre formati comuni utilizzati per rappresentare le chiavi private. Formati diversi vengono utilizzati in circostanze diverse. I formati esadecimali e binari non elaborati vengono utilizzati internamente nel software e raramente mostrati agli utenti. Il WIF viene utilizzato per l'importazione</p>
+<p>Rappresentazioni delle chiavi private (formati di codifica)</p>
+<table>
+<thead>
+<tr>
+<th>Tipo</th>
+<th style="text-align: center;">Prefisso</th>
+<th>Descrizione</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>Raw</em></td>
+<td style="text-align: center;">nessuno</td>
+<td>32 byte</td>
+</tr>
+<tr>
+<td><em>Hex</em></td>
+<td style="text-align: center;">nessuno</td>
+<td>64 cifre esadecimali</td>
+</tr>
+<tr>
+<td><em>WIF</em></td>
+<td style="text-align: center;">5</td>
+<td>Codifica Base58Check: Base58 con prefisso  0x80 e checksum a 4 byte</td>
+</tr>
+<tr>
+<td><em>WIF-compressed</em></td>
+<td style="text-align: center;">K o L</td>
+<td>Come per WIF, con l'aggiunta del suffisso 0x01 prima della codifica</td>
+</tr>
+</tbody>
+</table>
+<h3>Seed</h3>
+<p>Spesso la chiave privata viene confusa con il <a href="seed.html">seed</a>, che sono concetti correlati nell'ambito delle criptovalute, ma non sono la stessa cosa.</p>
+<p>Il seed è una frase composta da diverse parole, spesso 12 o 24, che viene utilizzata come seed o seme per generare una o più chiavi private. Il seed viene utilizzato come una forma di backup e ripristino delle chiavi del wallet, in modo da poter accedere ai propri fondi in caso di perdita o danneggiamento del dispositivo sul quale è memorizzato il wallet.</p>
+<p>La chiave privata è generata a partire dal seed utilizzando un'algoritmo <a href="deterministic-wallets.html">deterministico</a> che consente di generare molte chiavi private da un singolo seed. In questo modo, se si conosce il seed, è possibile generare la chiave privata associata e accedere ai propri fondi.</p>
+<h3>Chiave privata estesa</h3>
+<p>La <a href="xprv.html">chiave privata estesa</a> è un formato che include informazioni extra, come i codici di derivazione dei segni, insieme alla chiave privata vera e propria. Questo formato viene utilizzato in alcuni tipi di wallet hardware e software per supportare la gestione delle più complesse gerarchie di chiavi e indirizzi.</p></p></section><div><ul class="list-group  list-group-flush"><li class="list-group-item fw-bold">Link utili:</li><li class="list-group-item"><a href="https://allprivatekeys.com/">All private keys - sito è stato creato per verificare la sicurezza della rete Bitcoin</a></li><li class="list-group-item"><a href="https://learnmeabitcoin.com/beginners/guide/private-keys/">Private Keys su Learn Me A Bitcoin (in inglese)</a></li></ul></div><div class="row p-4 fw-light"><ul class="list-group"><li class="list-group-item list-group-item-primary">Vedi anche</li><li class="list-group-item list-group-item-action"><a href="public-key.html">Public Key</a> Chiave pubblica</li><li class="list-group-item list-group-item-action"><a href="signature.html">Signature</a> Firma</li><li class="list-group-item list-group-item-action"><a href="wallet.html">Wallet</a> Portafoglio</li><li class="list-group-item list-group-item-action"><a href="wif.html">WIF</a> (Wallet import format)</li><li class="list-group-item list-group-item-action"><a href="xprv.html">Xprv</a> (Extended Private Key) Chiave privata estesa</li></ul></div><hr/><p class="text-end fw-lighter"><span class="text-secondary">aggiornato il </span>2021-10-21</p></div></p></div></div></div></main><div class="container-fluid text-white bg-dark"><div class="container"><footer class="py-5"><div class="row"><div>Scarica il glossario: 
+<a href="glossario.pdf" class="text-white">pdf</a> 
+<a href="glossario.epub" class="text-white">epub</a></div><div class="row fs-6 fw-lighter">il Glossario Bitcoin in italiano è disponibile su ipfs: <ul><li><span><a href="https://shrill-water-3846.on.fleek.co/" class="text-white">tramite Fleek</a> <a href="https://docs.ipfs.io/how-to/websites-on-ipfs/introducing-fleek/" class="text-white">(cos'è Fleek?)</a></span></li></ul></div></div><div class="d-flex justify-content-between py-4 my-4 border-top"><a href="https://BitcoinItaliaNetwork.com" style="color: white;">Bitcoin Italia Network</a><a href="https://nostree.me/npub14yzptn3vkf4ravfl9dhu49pzqpsap3m5emze2e6v4tuyceht72eqkhzldt" style="color: white;">21 Milioni di chiacchiere</a><ul class="list-unstyled d-flex"><li class="ms-3"><a href="https://t.me/+iCd-GTx2Sx04Mzk0" class="text-white"><i class="bi bi-telegram"></i></a></li><li class="ms-3"><a href="https://twitter.com/21MdiC_BTC" class="text-white"><i class="bi bi-twitter-x"></i></a></li><li class="ms-3"><a href="https://www.facebook.com/groups/1479005739604711" class="text-white"><i class="bi bi-facebook"></i></a></li><li class="ms-3"><a href="https://nostr.com/npub14yzptn3vkf4ravfl9dhu49pzqpsap3m5emze2e6v4tuyceht72eqkhzldt" class="text-white"><i class="bi bi-clipboard2-check"></i></a></li><li class="ms-3"><a href="https://www.threads.net/@21mdic.btc" class="text-white"><i class="bi bi-threads"></i></a></li></ul></div></footer></div></div></div><script src="bootstrap-5.2.0-dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script></body></html>

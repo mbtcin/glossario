@@ -1,0 +1,79 @@
+<!doctype html>
+<html><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>Lightning Invoice  - Glossario Bitcoin</title><link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"/><link href="bootstrap-5.2.0-dist/css/bootstrap.min.css" rel="stylesheet"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"/><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/4.1.5/css/flag-icons.min.css" integrity="sha512-UwbBNAFoECXUPeDhlKR3zzWU3j8ddKIQQsDOsKhXQGdiB5i3IHEXr9kXx82+gaHigbNKbTDp3VY/G6gZqva6ZQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/></head><body><div><header style="background: #ff9300;"><header class="p-4 bg-white flex flex-col lg:flex-row justify-between items-center"><div><a href="https://bitcoinitalianetwork.com/" class="text-lg"><span class="font-bold text-black"><span class="bg-green-500">&nbsp;₿itcoin</span><span>Italia</span><span class="bg-red-500 text-white">Network&nbsp;</span></span></a></div></header></header><div class="container"><nav><ol class="breadcrumb"><li class="breadcrumb-item"><a href="https://bitcoinitalianetwork.com/">Home</a></li><li class="breadcrumb-item"><a href="https://glossario.bitcoinitalianetwork.com/">Glossario</a></li><li class="breadcrumb-item"><a href="livello_intermedio.html">intermedio</a></li><li class="breadcrumb-item"><a href="intermedio_tecnologia.html">tecnologia</a></li></ol></nav></div><main><div class="container"><div class="card"><div class="card-body"><h5 class="card-body"><div><p><span class="flag-icon flag-icon-gb"></span><span> </span>Lightning Invoice</p><div></div></div></h5><p class="card-text"><div><p><span class="text-secondary">Difficoltà: </span><a href="livello_intermedio.html" class="badge bg-primary">intermedio</a></p><p><span class="text-secondary">Argomento: </span><span class="badge rounded-pill bg-success">tecnologia</span></p><hr/><p class="fw-bold">DEFINIZIONE</p><section><p class="fs-5"><p>Una Lightning Invoice è simile a una fattura o meglio una richiesta di pagamento, che viene emessa per la rete <a href="lightning-network.html">Lightning Network</a> dal destinatario o beneficiario.</p>
+<p>Una Lightning invoice contiene tutte le informazioni di cui il pagante ha bisogno per eseguire correttamente il pagamento: l'importo da pagare, la destinazione del pagamento, i metadati e un messaggio.</p>
+<p>Le invoice possono essere considerate l'equivalente Lightning di un indirizzo bitcoin in quanto entrambe vengono inviate dal beneficiario al pagatore per facilitare un pagamento, anche se funzionamento e caratteristiche sono molto diverse. Le Lightning invoice sono generalmente rappresentate come una stringa alfanumerica o a causa della sua lunghezza, sotto forma di <a href="qr-code.html">codice QR</a>.</p>
+<p>Le Lightning invoice sono definite dallo standard BOLT 11. BOLT sta per "Basis of Lightning Technology" e copre tutte le specifiche della rete Lightning. Le specifiche BOLT sono necessarie per consentire a implementazioni separate di funzionare e interagire sulla stessa rete. Pertanto, grazie alle specifiche, una Lightning invoice creata da qualsiasi client o strumento sarà compresa da tutte le altre implementazioni.</p>
+<p><strong>URI Scheme</strong>: le Lightning invoice possono avere il prefisso <code>lightning:</code> per segnalare nei collegamenti 'ipertestuali quale software può essere utilizzato per pagare l'invoice. Idealmente, a lungo termine, con questo schema URI, se si segue un link Lightning sul web, il browser o il sistema operativo indirizzerà l'utente al wallet Lightning di sua scelta dove potrà confermare il pagamento dell'invoice. </p>
+<p>La Lightning invoice è costituita da una parte leggibile dall'uomo e da una parte di dati.</p>
+<p>Le Lightning invoice, come altre stringhe codificate in <a href="bech32.html">Bech32</a>, sono in genere interamente minuscole. Tuttavia, la codifica dei soli caratteri maiuscoli nei codici QR offre notevoli miglioramenti in termini di spazio, motivo per cui le Lightning invoice in maiuscolo sono più frequenti. Questo è anche il motivo per cui un codice QR di una Lightning invoice potrebbe essere decodificato come solo maiuscolo.</p>
+<p><strong>Prefisso</strong>: una Lightning invoice inizia con le lettere <code>ln</code> che stanno per <em>Lightning Network</em>.</p>
+<p><strong>Network</strong>: segue il codice di due lettere che indica quale rete, come definito da <a href="bip-173-bech32.html">BIP 173</a> per gli indirizzi <a href="segwit.html">Segwit</a> nativi:</p>
+<ul>
+<li><strong>bc</strong> per Bitcoin <a href="mainnet.html">mainnet</a></li>
+<li><strong>tb</strong> per <a href="testnet.html">Testnet</a> Bitcoin</li>
+<li><strong>bs</strong> per Bitcoin <a href="bip-325-signet.html">signet</a></li>
+<li><strong>bcrt</strong> per Bitcoin regtest.</li>
+</ul>
+<p>Poiché la invoice è codificata in Bech32, dovrà anche includere il checksum appropriato alla fine.</p>
+<p><strong>Importo</strong>: il prefisso è seguito dall'importo. Sebbene una tipica Lightning invoice includa un importo, è possibile emettere invoice senza importi. Le invoice Lightning fanno riferimento ai bitcoin, non ai satoshi. Per risparmiare spazio nelle invoice a cifra tonda, l'importo può essere seguito da un moltiplicatore. Una fattura Lightning da un solo satoshi, ad esempio, appare come 10n, cento satoshi come 1u e un milli-satoshi come 10p.</p>
+<table>
+<thead>
+<tr>
+<th>unità</th>
+<th style="text-align: center;">moltiplicatore</th>
+<th style="text-align: center;">satoshi</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>m (milli)</td>
+<td style="text-align: center;">0.001</td>
+<td style="text-align: center;">100,000</td>
+</tr>
+<tr>
+<td>u (micro)</td>
+<td style="text-align: center;">0.000001</td>
+<td style="text-align: center;">100</td>
+</tr>
+<tr>
+<td>n (nano)</td>
+<td style="text-align: center;">0.000000001</td>
+<td style="text-align: center;">0.1</td>
+</tr>
+<tr>
+<td>p (pico)</td>
+<td style="text-align: center;">0.000000000001</td>
+<td style="text-align: center;">0.0001</td>
+</tr>
+</tbody>
+</table>
+<p>Il prefisso e l'importo insieme sono leggibili dall'uomo, consentendo a un utente esperto di identificarla immediatamente come una Lightning invoice e di dedurne l'importo.</p>
+<p><strong>Timestamp</strong>: la prima parte dei dati è un <a href="timestamp.html">timestamp</a> unix.</p>
+<p>Esiste una serie di tag che possono essere utilizzati per indicare dati aggiuntivi. Alcuni di questi dati sono obbligatori, mentre altri possono essere forniti facoltativamente dal beneficiario.</p>
+<p>Attualmente sono definiti i seguenti campi:</p>
+<ul>
+<li><strong>p</strong> (1): il payment_hash <a href="sha-256.html">SHA256</a> a 256 bit, l'<a href="hash.html">hash</a> della <a href="preimage.html">preimage</a> del pagamento. Questa preimage viene rivelata successivamente durante il processo di pagamento e può fungere da prova di pagamento.</li>
+<li><strong>s</strong> (16): Un secret a 256 bit impedisce ai nodi di inoltro di sondare il destinatario del pagamento.</li>
+<li><strong>d</strong> (13): Descrizione, è possibile aggiungere qui una breve descrizione dello scopo del pagamento, codificata con UTF-8, ad esempio "1 tazza di caffè". Se questo campo non è impostato, deve essere utilizzato al suo posto il tag h.</li>
+<li><strong>n</strong> (19): La chiave pubblica a 33 byte del nodo del beneficiario può essere inserita qui.</li>
+<li><strong>h</strong> (23): Se il campo <strong>d</strong> non offre spazio sufficiente, si può includere un hash della descrizione più lunga. Il modo in cui la descrizione completa viene comunicata non è qui definito.</li>
+<li><strong>x</strong> (6): expiry time, il tempo di scadenza in secondi.</li>
+<li><strong>c</strong> (24): Il valore min_final_cltv_expiry per l'ultimo <a href="htlc.html">HTLC</a> della route. In genere è predefinito a 18.</li>
+<li><strong>f</strong> (9): Backup Bitcoin Address, è possibile includere un indirizzo <a href="on-chain.html">on-chain</a> fallback, di ripiego, nel caso in cui il pagamento Lightning non riesca per qualsiasi motivo.</li>
+<li><strong>r</strong> (3): Una o più voci contenenti informazioni di routing aggiuntive per un routing privato. Questi suggerimenti di instradamento includono:<ul>
+<li><strong>pubkey</strong> (264 bits)</li>
+<li><strong>short_channel_id</strong> (64 bits)</li>
+<li><strong>fee_base_msat</strong> (32 bits, big-endian)</li>
+<li><strong>fee_proportional_millionths</strong> (32 bits, big-endian)</li>
+<li><strong>cltv_expiry_delta</strong> (16 bits, big-endian)</li>
+</ul>
+</li>
+<li><strong>9</strong> (5): Uno o più valori a 5 bit contenenti le caratteristiche supportate o richieste per ricevere questo pagamento.</li>
+</ul>
+<p><strong>Signature</strong>: Infine, l'invoice include una firma. Questa firma viene verificata utilizzando la chiave pubblica fornita nell'invoice.</p>
+<p>È possibile decodificare una Lightning invoice per ispezionarne il contenuto con il comando</p>
+<p><code>lncli decodepayreq</code></p>
+<p>Il formato della Lightning Invoice soffre di alcuni problemi: integrità della firma, mancanza di associazione per utente, mancanza di estrazione dei campi. Inoltre, richiede al destinatario un endpoint statico, come un sito web per comunicare l'invoice. La dipendenza da un sito web introduce una violazione della riservatezza del pagamento, poiché vengono coinvolti i server DNS, e una dipendenza sulla sicurezza della PKI, l'infrastruttura a chiave pubblica del web per la certificazione del sito web.</p>
+<p>Attraverso la proposta <a href="bolt12.html">BOLT 12</a> vengono aggiunte alle Lightning invoice numerose funzionalità, un nuovo protocollo di richieste di pagamento che introduce le offer.</p></p></section><div><ul class="list-group  list-group-flush"><li class="list-group-item fw-bold">Link utili:</li><li class="list-group-item"><a href="https://lndecode.com/">Il sito Lightning Payment Request Decoder per decodificare le Lightning invoice</a></li></ul></div><div class="row p-4 fw-light"><ul class="list-group"><li class="list-group-item list-group-item-primary">Vedi anche</li><li class="list-group-item list-group-item-action"><a href="invoice.html">invoice</a></li><li class="list-group-item list-group-item-action"><a href="lightning-network.html">Lightning Network</a></li><li class="list-group-item list-group-item-action"><a href="preimage.html">preimage</a></li></ul></div><hr/><p class="text-end fw-lighter"><span class="text-secondary">aggiornato il </span>2023-01-19</p></div></p></div></div></div></main><div class="container-fluid text-white bg-dark"><div class="container"><footer class="py-5"><div class="row"><div>Scarica il glossario: 
+<a href="glossario.pdf" class="text-white">pdf</a> 
+<a href="glossario.epub" class="text-white">epub</a></div><div class="row fs-6 fw-lighter">il Glossario Bitcoin in italiano è disponibile su ipfs: <ul><li><span><a href="https://shrill-water-3846.on.fleek.co/" class="text-white">tramite Fleek</a> <a href="https://docs.ipfs.io/how-to/websites-on-ipfs/introducing-fleek/" class="text-white">(cos'è Fleek?)</a></span></li></ul></div></div><div class="d-flex justify-content-between py-4 my-4 border-top"><a href="https://BitcoinItaliaNetwork.com" style="color: white;">Bitcoin Italia Network</a><a href="https://nostree.me/npub14yzptn3vkf4ravfl9dhu49pzqpsap3m5emze2e6v4tuyceht72eqkhzldt" style="color: white;">21 Milioni di chiacchiere</a><ul class="list-unstyled d-flex"><li class="ms-3"><a href="https://t.me/+iCd-GTx2Sx04Mzk0" class="text-white"><i class="bi bi-telegram"></i></a></li><li class="ms-3"><a href="https://twitter.com/21MdiC_BTC" class="text-white"><i class="bi bi-twitter-x"></i></a></li><li class="ms-3"><a href="https://www.facebook.com/groups/1479005739604711" class="text-white"><i class="bi bi-facebook"></i></a></li><li class="ms-3"><a href="https://nostr.com/npub14yzptn3vkf4ravfl9dhu49pzqpsap3m5emze2e6v4tuyceht72eqkhzldt" class="text-white"><i class="bi bi-clipboard2-check"></i></a></li><li class="ms-3"><a href="https://www.threads.net/@21mdic.btc" class="text-white"><i class="bi bi-threads"></i></a></li></ul></div></footer></div></div></div><script src="bootstrap-5.2.0-dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script></body></html>
