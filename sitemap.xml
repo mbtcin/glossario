@@ -5,6 +5,18 @@
     <lastmod>2022-11-05</lastmod>
   </url>
   <url>
+    <loc>https://glossario.bitcoinitalianetwork.com/shor.html</loc>
+    <lastmod>2026-04-03</lastmod>
+  </url>
+  <url>
+    <loc>https://glossario.bitcoinitalianetwork.com/q-day.html</loc>
+    <lastmod>2026-04-03</lastmod>
+  </url>
+  <url>
+    <loc>https://glossario.bitcoinitalianetwork.com/crqc.html</loc>
+    <lastmod>2026-04-03</lastmod>
+  </url>
+  <url>
     <loc>https://glossario.bitcoinitalianetwork.com/policy-rules.html</loc>
     <lastmod>2025-05-02</lastmod>
   </url>
@@ -381,16 +393,16 @@
     <lastmod>2021-12-16</lastmod>
   </url>
   <url>
-    <loc>https://glossario.bitcoinitalianetwork.com/bip-68-nsequence.html</loc>
-    <lastmod>2022-03-17</lastmod>
+    <loc>https://glossario.bitcoinitalianetwork.com/cpu.html</loc>
+    <lastmod>2021-10-21</lastmod>
   </url>
   <url>
     <loc>https://glossario.bitcoinitalianetwork.com/bip-69-lexicographical-indexing-of-transaction-inputs-and-outputs.html</loc>
     <lastmod>2023-01-13</lastmod>
   </url>
   <url>
-    <loc>https://glossario.bitcoinitalianetwork.com/bip-70-payment-protocol.html</loc>
-    <lastmod>2021-12-20</lastmod>
+    <loc>https://glossario.bitcoinitalianetwork.com/crypto.html</loc>
+    <lastmod>2021-10-21</lastmod>
   </url>
   <url>
     <loc>https://glossario.bitcoinitalianetwork.com/bip-8-sfa.html</loc>
@@ -513,16 +525,16 @@
     <lastmod>2022-07-01</lastmod>
   </url>
   <url>
-    <loc>https://glossario.bitcoinitalianetwork.com/bond.html</loc>
-    <lastmod>2021-12-15</lastmod>
+    <loc>https://glossario.bitcoinitalianetwork.com/cryptokitties.html</loc>
+    <lastmod>2021-10-21</lastmod>
   </url>
   <url>
     <loc>https://glossario.bitcoinitalianetwork.com/border-wallet.html</loc>
     <lastmod>2023-04-04</lastmod>
   </url>
   <url>
-    <loc>https://glossario.bitcoinitalianetwork.com/bot.html</loc>
-    <lastmod>2022-01-10</lastmod>
+    <loc>https://glossario.bitcoinitalianetwork.com/daico.html</loc>
+    <lastmod>2021-10-21</lastmod>
   </url>
   <url>
     <loc>https://glossario.bitcoinitalianetwork.com/brainwallet.html</loc>
@@ -561,12 +573,12 @@
     <lastmod>2021-10-26</lastmod>
   </url>
   <url>
-    <loc>https://glossario.bitcoinitalianetwork.com/btfd.html</loc>
-    <lastmod>2021-10-26</lastmod>
+    <loc>https://glossario.bitcoinitalianetwork.com/dao.html</loc>
+    <lastmod>2021-10-21</lastmod>
   </url>
   <url>
-    <loc>https://glossario.bitcoinitalianetwork.com/bubble.html</loc>
-    <lastmod>2021-10-26</lastmod>
+    <loc>https://glossario.bitcoinitalianetwork.com/dapps.html</loc>
+    <lastmod>2021-10-21</lastmod>
   </url>
   <url>
     <loc>https://glossario.bitcoinitalianetwork.com/bull-market.html</loc>
@@ -629,8 +641,8 @@
     <lastmod>2021-11-21</lastmod>
   </url>
   <url>
-    <loc>https://glossario.bitcoinitalianetwork.com/cftc.html</loc>
-    <lastmod>2021-10-27</lastmod>
+    <loc>https://glossario.bitcoinitalianetwork.com/delegation.html</loc>
+    <lastmod>2021-10-21</lastmod>
   </url>
   <url>
     <loc>https://glossario.bitcoinitalianetwork.com/chain.html</loc>
@@ -789,11 +801,11 @@
     <lastmod>2022-12-27</lastmod>
   </url>
   <url>
-    <loc>https://glossario.bitcoinitalianetwork.com/cpi.html</loc>
-    <lastmod>2022-03-18</lastmod>
+    <loc>https://glossario.bitcoinitalianetwork.com/dlt.html</loc>
+    <lastmod>2021-10-21</lastmod>
   </url>
   <url>
-    <loc>https://glossario.bitcoinitalianetwork.com/cpu.html</loc>
+    <loc>https://glossario.bitcoinitalianetwork.com/erc-1155.html</loc>
     <lastmod>2021-10-21</lastmod>
   </url>
   <url>
@@ -805,7 +817,7 @@
     <lastmod>2021-10-21</lastmod>
   </url>
   <url>
-    <loc>https://glossario.bitcoinitalianetwork.com/crypto.html</loc>
+    <loc>https://glossario.bitcoinitalianetwork.com/eth.html</loc>
     <lastmod>2021-10-21</lastmod>
   </url>
   <url>
@@ -821,7 +833,7 @@
     <lastmod>2021-10-21</lastmod>
   </url>
   <url>
-    <loc>https://glossario.bitcoinitalianetwork.com/cryptokitties.html</loc>
+    <loc>https://glossario.bitcoinitalianetwork.com/flash-crash.html</loc>
     <lastmod>2021-10-21</lastmod>
   </url>
   <url>
@@ -849,15 +861,15 @@
     <lastmod>2021-10-21</lastmod>
   </url>
   <url>
-    <loc>https://glossario.bitcoinitalianetwork.com/daico.html</loc>
+    <loc>https://glossario.bitcoinitalianetwork.com/flash-dump.html</loc>
     <lastmod>2021-10-21</lastmod>
   </url>
   <url>
-    <loc>https://glossario.bitcoinitalianetwork.com/dao.html</loc>
+    <loc>https://glossario.bitcoinitalianetwork.com/gwei.html</loc>
     <lastmod>2021-10-21</lastmod>
   </url>
   <url>
-    <loc>https://glossario.bitcoinitalianetwork.com/dapps.html</loc>
+    <loc>https://glossario.bitcoinitalianetwork.com/hard-cap.html</loc>
     <lastmod>2021-10-21</lastmod>
   </url>
   <url>
@@ -877,8 +889,8 @@
     <lastmod>2024-01-04</lastmod>
   </url>
   <url>
-    <loc>https://glossario.bitcoinitalianetwork.com/dca.html</loc>
-    <lastmod>2022-03-03</lastmod>
+    <loc>https://glossario.bitcoinitalianetwork.com/hardware.html</loc>
+    <lastmod>2021-10-21</lastmod>
   </url>
   <url>
     <loc>https://glossario.bitcoinitalianetwork.com/ddos.html</loc>
@@ -917,7 +929,7 @@
     <lastmod>2024-04-20</lastmod>
   </url>
   <url>
-    <loc>https://glossario.bitcoinitalianetwork.com/delegation.html</loc>
+    <loc>https://glossario.bitcoinitalianetwork.com/immutability.html</loc>
     <lastmod>2021-10-21</lastmod>
   </url>
   <url>
@@ -957,8 +969,8 @@
     <lastmod>2022-09-14</lastmod>
   </url>
   <url>
-    <loc>https://glossario.bitcoinitalianetwork.com/difficulty-bomb.html</loc>
-    <lastmod>2021-11-10</lastmod>
+    <loc>https://glossario.bitcoinitalianetwork.com/ito.html</loc>
+    <lastmod>2021-10-21</lastmod>
   </url>
   <url>
     <loc>https://glossario.bitcoinitalianetwork.com/difficulty-epoch.html</loc>
@@ -977,16 +989,16 @@
     <lastmod>2022-05-17</lastmod>
   </url>
   <url>
-    <loc>https://glossario.bitcoinitalianetwork.com/digital-signature.html</loc>
-    <lastmod>2021-11-10</lastmod>
+    <loc>https://glossario.bitcoinitalianetwork.com/jomo.html</loc>
+    <lastmod>2021-10-21</lastmod>
   </url>
   <url>
-    <loc>https://glossario.bitcoinitalianetwork.com/dino.html</loc>
-    <lastmod>2021-12-03</lastmod>
+    <loc>https://glossario.bitcoinitalianetwork.com/long.html</loc>
+    <lastmod>2021-10-21</lastmod>
   </url>
   <url>
-    <loc>https://glossario.bitcoinitalianetwork.com/dip.html</loc>
-    <lastmod>2021-10-26</lastmod>
+    <loc>https://glossario.bitcoinitalianetwork.com/market-correction.html</loc>
+    <lastmod>2021-10-21</lastmod>
   </url>
   <url>
     <loc>https://glossario.bitcoinitalianetwork.com/distributed.html</loc>
@@ -1001,7 +1013,7 @@
     <lastmod>2023-04-20</lastmod>
   </url>
   <url>
-    <loc>https://glossario.bitcoinitalianetwork.com/dlt.html</loc>
+    <loc>https://glossario.bitcoinitalianetwork.com/masternodes.html</loc>
     <lastmod>2021-10-21</lastmod>
   </url>
   <url>
@@ -1081,8 +1093,8 @@
     <lastmod>2023-01-30</lastmod>
   </url>
   <url>
-    <loc>https://glossario.bitcoinitalianetwork.com/eip.html</loc>
-    <lastmod>2022-02-02</lastmod>
+    <loc>https://glossario.bitcoinitalianetwork.com/metaverse.html</loc>
+    <lastmod>2021-10-21</lastmod>
   </url>
   <url>
     <loc>https://glossario.bitcoinitalianetwork.com/eip-1559.html</loc>
@@ -1129,7 +1141,7 @@
     <lastmod>2022-02-02</lastmod>
   </url>
   <url>
-    <loc>https://glossario.bitcoinitalianetwork.com/erc-1155.html</loc>
+    <loc>https://glossario.bitcoinitalianetwork.com/options.html</loc>
     <lastmod>2021-10-21</lastmod>
   </url>
   <url>
@@ -1165,7 +1177,7 @@
     <lastmod>2024-01-11</lastmod>
   </url>
   <url>
-    <loc>https://glossario.bitcoinitalianetwork.com/eth.html</loc>
+    <loc>https://glossario.bitcoinitalianetwork.com/overbought.html</loc>
     <lastmod>2021-10-21</lastmod>
   </url>
   <url>
@@ -1249,8 +1261,8 @@
     <lastmod>2021-11-10</lastmod>
   </url>
   <url>
-    <loc>https://glossario.bitcoinitalianetwork.com/fibonacci-retracement.html</loc>
-    <lastmod>2021-11-14</lastmod>
+    <loc>https://glossario.bitcoinitalianetwork.com/pob.html</loc>
+    <lastmod>2021-10-21</lastmod>
   </url>
   <url>
     <loc>https://glossario.bitcoinitalianetwork.com/fibre.html</loc>
@@ -1277,11 +1289,11 @@
     <lastmod>2022-11-11</lastmod>
   </url>
   <url>
-    <loc>https://glossario.bitcoinitalianetwork.com/flash-crash.html</loc>
+    <loc>https://glossario.bitcoinitalianetwork.com/poc.html</loc>
     <lastmod>2021-10-21</lastmod>
   </url>
   <url>
-    <loc>https://glossario.bitcoinitalianetwork.com/flash-dump.html</loc>
+    <loc>https://glossario.bitcoinitalianetwork.com/portfolio.html</loc>
     <lastmod>2021-10-21</lastmod>
   </url>
   <url>
@@ -1289,8 +1301,8 @@
     <lastmod>2022-03-27</lastmod>
   </url>
   <url>
-    <loc>https://glossario.bitcoinitalianetwork.com/flip.html</loc>
-    <lastmod>2022-04-05</lastmod>
+    <loc>https://glossario.bitcoinitalianetwork.com/pre-sale.html</loc>
+    <lastmod>2021-10-21</lastmod>
   </url>
   <url>
     <loc>https://glossario.bitcoinitalianetwork.com/flippening.html</loc>
@@ -1301,8 +1313,8 @@
     <lastmod>2022-03-04</lastmod>
   </url>
   <url>
-    <loc>https://glossario.bitcoinitalianetwork.com/fomc.html</loc>
-    <lastmod>2021-12-15</lastmod>
+    <loc>https://glossario.bitcoinitalianetwork.com/private-blockchain.html</loc>
+    <lastmod>2021-10-21</lastmod>
   </url>
   <url>
     <loc>https://glossario.bitcoinitalianetwork.com/fomo.html</loc>
@@ -1365,8 +1377,8 @@
     <lastmod>2023-01-01</lastmod>
   </url>
   <url>
-    <loc>https://glossario.bitcoinitalianetwork.com/fungible.html</loc>
-    <lastmod>2021-11-15</lastmod>
+    <loc>https://glossario.bitcoinitalianetwork.com/public-blockchain.html</loc>
+    <lastmod>2021-10-21</lastmod>
   </url>
   <url>
     <loc>https://glossario.bitcoinitalianetwork.com/futures.html</loc>
@@ -1385,8 +1397,8 @@
     <lastmod>2022-06-07</lastmod>
   </url>
   <url>
-    <loc>https://glossario.bitcoinitalianetwork.com/governance-tokens.html</loc>
-    <lastmod>2021-10-27</lastmod>
+    <loc>https://glossario.bitcoinitalianetwork.com/qr-code.html</loc>
+    <lastmod>2021-10-21</lastmod>
   </url>
   <url>
     <loc>https://glossario.bitcoinitalianetwork.com/gpu.html</loc>
@@ -1401,7 +1413,7 @@
     <lastmod>2024-04-29</lastmod>
   </url>
   <url>
-    <loc>https://glossario.bitcoinitalianetwork.com/gwei.html</loc>
+    <loc>https://glossario.bitcoinitalianetwork.com/raiden-network.html</loc>
     <lastmod>2021-10-21</lastmod>
   </url>
   <url>
@@ -1409,7 +1421,7 @@
     <lastmod>2022-09-19</lastmod>
   </url>
   <url>
-    <loc>https://glossario.bitcoinitalianetwork.com/hard-cap.html</loc>
+    <loc>https://glossario.bitcoinitalianetwork.com/roi.html</loc>
     <lastmod>2021-10-21</lastmod>
   </url>
   <url>
@@ -1425,7 +1437,7 @@
     <lastmod>2022-07-18</lastmod>
   </url>
   <url>
-    <loc>https://glossario.bitcoinitalianetwork.com/hardware.html</loc>
+    <loc>https://glossario.bitcoinitalianetwork.com/scrypt.html</loc>
     <lastmod>2021-10-21</lastmod>
   </url>
   <url>
@@ -1453,8 +1465,8 @@
     <lastmod>2021-11-10</lastmod>
   </url>
   <url>
-    <loc>https://glossario.bitcoinitalianetwork.com/helicopter-money.html</loc>
-    <lastmod>2021-11-12</lastmod>
+    <loc>https://glossario.bitcoinitalianetwork.com/sell-wall.html</loc>
+    <lastmod>2021-10-21</lastmod>
   </url>
   <url>
     <loc>https://glossario.bitcoinitalianetwork.com/heuristic.html</loc>
@@ -1525,19 +1537,19 @@
     <lastmod>2021-10-21</lastmod>
   </url>
   <url>
-    <loc>https://glossario.bitcoinitalianetwork.com/ico.html</loc>
-    <lastmod>2021-10-26</lastmod>
+    <loc>https://glossario.bitcoinitalianetwork.com/shitcoin.html</loc>
+    <lastmod>2021-10-21</lastmod>
   </url>
   <url>
-    <loc>https://glossario.bitcoinitalianetwork.com/ido.html</loc>
-    <lastmod>2021-10-26</lastmod>
+    <loc>https://glossario.bitcoinitalianetwork.com/silk-road.html</loc>
+    <lastmod>2021-10-21</lastmod>
   </url>
   <url>
-    <loc>https://glossario.bitcoinitalianetwork.com/ieo.html</loc>
-    <lastmod>2021-11-16</lastmod>
+    <loc>https://glossario.bitcoinitalianetwork.com/stop-loss.html</loc>
+    <lastmod>2021-10-21</lastmod>
   </url>
   <url>
-    <loc>https://glossario.bitcoinitalianetwork.com/immutability.html</loc>
+    <loc>https://glossario.bitcoinitalianetwork.com/to-the-moon.html</loc>
     <lastmod>2021-10-21</lastmod>
   </url>
   <url>
@@ -1561,8 +1573,8 @@
     <lastmod>2023-10-29</lastmod>
   </url>
   <url>
-    <loc>https://glossario.bitcoinitalianetwork.com/intrinsic-value.html</loc>
-    <lastmod>2021-10-26</lastmod>
+    <loc>https://glossario.bitcoinitalianetwork.com/tokenize.html</loc>
+    <lastmod>2021-10-21</lastmod>
   </url>
   <url>
     <loc>https://glossario.bitcoinitalianetwork.com/invoice.html</loc>
@@ -1577,7 +1589,7 @@
     <lastmod>2021-10-21</lastmod>
   </url>
   <url>
-    <loc>https://glossario.bitcoinitalianetwork.com/ito.html</loc>
+    <loc>https://glossario.bitcoinitalianetwork.com/trustless.html</loc>
     <lastmod>2021-10-21</lastmod>
   </url>
   <url>
@@ -1589,7 +1601,7 @@
     <lastmod>2023-03-30</lastmod>
   </url>
   <url>
-    <loc>https://glossario.bitcoinitalianetwork.com/jomo.html</loc>
+    <loc>https://glossario.bitcoinitalianetwork.com/uvp.html</loc>
     <lastmod>2021-10-21</lastmod>
   </url>
   <url>
@@ -1621,8 +1633,8 @@
     <lastmod>2024-05-08</lastmod>
   </url>
   <url>
-    <loc>https://glossario.bitcoinitalianetwork.com/laser-eyes.html</loc>
-    <lastmod>2021-12-15</lastmod>
+    <loc>https://glossario.bitcoinitalianetwork.com/vanity-address.html</loc>
+    <lastmod>2021-10-21</lastmod>
   </url>
   <url>
     <loc>https://glossario.bitcoinitalianetwork.com/lattice.html</loc>
@@ -1649,8 +1661,8 @@
     <lastmod>2022-10-22</lastmod>
   </url>
   <url>
-    <loc>https://glossario.bitcoinitalianetwork.com/legal-tender.html</loc>
-    <lastmod>2022-03-03</lastmod>
+    <loc>https://glossario.bitcoinitalianetwork.com/virgin-bitcoin.html</loc>
+    <lastmod>2021-10-21</lastmod>
   </url>
   <url>
     <loc>https://glossario.bitcoinitalianetwork.com/leverage-gearing.html</loc>
@@ -1721,16 +1733,16 @@
     <lastmod>2022-09-30</lastmod>
   </url>
   <url>
-    <loc>https://glossario.bitcoinitalianetwork.com/long.html</loc>
+    <loc>https://glossario.bitcoinitalianetwork.com/volume.html</loc>
     <lastmod>2021-10-21</lastmod>
   </url>
   <url>
-    <loc>https://glossario.bitcoinitalianetwork.com/long-position.html</loc>
-    <lastmod>2022-02-14</lastmod>
+    <loc>https://glossario.bitcoinitalianetwork.com/withdrawal.html</loc>
+    <lastmod>2021-10-21</lastmod>
   </url>
   <url>
-    <loc>https://glossario.bitcoinitalianetwork.com/long-squeeze.html</loc>
-    <lastmod>2022-02-14</lastmod>
+    <loc>https://glossario.bitcoinitalianetwork.com/zk-snarks.html</loc>
+    <lastmod>2021-10-21</lastmod>
   </url>
   <url>
     <loc>https://glossario.bitcoinitalianetwork.com/longest-chain.html</loc>
@@ -1773,8 +1785,8 @@
     <lastmod>2022-07-05</lastmod>
   </url>
   <url>
-    <loc>https://glossario.bitcoinitalianetwork.com/market-correction.html</loc>
-    <lastmod>2021-10-21</lastmod>
+    <loc>https://glossario.bitcoinitalianetwork.com/rebound.html</loc>
+    <lastmod>2021-10-25</lastmod>
   </url>
   <url>
     <loc>https://glossario.bitcoinitalianetwork.com/market-liquidity.html</loc>
@@ -1801,8 +1813,8 @@
     <lastmod>2022-11-25</lastmod>
   </url>
   <url>
-    <loc>https://glossario.bitcoinitalianetwork.com/masternodes.html</loc>
-    <lastmod>2021-10-21</lastmod>
+    <loc>https://glossario.bitcoinitalianetwork.com/btfd.html</loc>
+    <lastmod>2021-10-26</lastmod>
   </url>
   <url>
     <loc>https://glossario.bitcoinitalianetwork.com/max-supply.html</loc>
@@ -1845,8 +1857,8 @@
     <lastmod>2022-10-22</lastmod>
   </url>
   <url>
-    <loc>https://glossario.bitcoinitalianetwork.com/metaverse.html</loc>
-    <lastmod>2021-10-21</lastmod>
+    <loc>https://glossario.bitcoinitalianetwork.com/bubble.html</loc>
+    <lastmod>2021-10-26</lastmod>
   </url>
   <url>
     <loc>https://glossario.bitcoinitalianetwork.com/mev.html</loc>
@@ -1877,8 +1889,8 @@
     <lastmod>2022-10-19</lastmod>
   </url>
   <url>
-    <loc>https://glossario.bitcoinitalianetwork.com/mint.html</loc>
-    <lastmod>2022-02-17</lastmod>
+    <loc>https://glossario.bitcoinitalianetwork.com/dip.html</loc>
+    <lastmod>2021-10-26</lastmod>
   </url>
   <url>
     <loc>https://glossario.bitcoinitalianetwork.com/mintxfee.html</loc>
@@ -1965,8 +1977,8 @@
     <lastmod>2021-10-21</lastmod>
   </url>
   <url>
-    <loc>https://glossario.bitcoinitalianetwork.com/ngmi.html</loc>
-    <lastmod>2022-03-31</lastmod>
+    <loc>https://glossario.bitcoinitalianetwork.com/ico.html</loc>
+    <lastmod>2021-10-26</lastmod>
   </url>
   <url>
     <loc>https://glossario.bitcoinitalianetwork.com/nixon-shock.html</loc>
@@ -2057,8 +2069,8 @@
     <lastmod>2023-03-07</lastmod>
   </url>
   <url>
-    <loc>https://glossario.bitcoinitalianetwork.com/options.html</loc>
-    <lastmod>2021-10-21</lastmod>
+    <loc>https://glossario.bitcoinitalianetwork.com/ido.html</loc>
+    <lastmod>2021-10-26</lastmod>
   </url>
   <url>
     <loc>https://glossario.bitcoinitalianetwork.com/oracle.html</loc>
@@ -2069,8 +2081,8 @@
     <lastmod>2022-03-27</lastmod>
   </url>
   <url>
-    <loc>https://glossario.bitcoinitalianetwork.com/order-flow.html</loc>
-    <lastmod>2022-03-27</lastmod>
+    <loc>https://glossario.bitcoinitalianetwork.com/intrinsic-value.html</loc>
+    <lastmod>2021-10-26</lastmod>
   </url>
   <url>
     <loc>https://glossario.bitcoinitalianetwork.com/ordinal.html</loc>
@@ -2109,8 +2121,8 @@
     <lastmod>2023-03-23</lastmod>
   </url>
   <url>
-    <loc>https://glossario.bitcoinitalianetwork.com/overbought.html</loc>
-    <lastmod>2021-10-21</lastmod>
+    <loc>https://glossario.bitcoinitalianetwork.com/payment-channel.html</loc>
+    <lastmod>2021-10-26</lastmod>
   </url>
   <url>
     <loc>https://glossario.bitcoinitalianetwork.com/oversold.html</loc>
@@ -2189,12 +2201,12 @@
     <lastmod>2023-01-11</lastmod>
   </url>
   <url>
-    <loc>https://glossario.bitcoinitalianetwork.com/payment-channel.html</loc>
+    <loc>https://glossario.bitcoinitalianetwork.com/private-sale.html</loc>
     <lastmod>2021-10-26</lastmod>
   </url>
   <url>
-    <loc>https://glossario.bitcoinitalianetwork.com/pbkdf2.html</loc>
-    <lastmod>2021-12-30</lastmod>
+    <loc>https://glossario.bitcoinitalianetwork.com/cftc.html</loc>
+    <lastmod>2021-10-27</lastmod>
   </url>
   <url>
     <loc>https://glossario.bitcoinitalianetwork.com/peg.html</loc>
@@ -2217,12 +2229,12 @@
     <lastmod>2021-10-21</lastmod>
   </url>
   <url>
-    <loc>https://glossario.bitcoinitalianetwork.com/pob.html</loc>
-    <lastmod>2021-10-21</lastmod>
+    <loc>https://glossario.bitcoinitalianetwork.com/governance-tokens.html</loc>
+    <lastmod>2021-10-27</lastmod>
   </url>
   <url>
-    <loc>https://glossario.bitcoinitalianetwork.com/poc.html</loc>
-    <lastmod>2021-10-21</lastmod>
+    <loc>https://glossario.bitcoinitalianetwork.com/signature.html</loc>
+    <lastmod>2021-10-27</lastmod>
   </url>
   <url>
     <loc>https://glossario.bitcoinitalianetwork.com/pocket-universe.html</loc>
@@ -2253,8 +2265,8 @@
     <lastmod>2022-11-18</lastmod>
   </url>
   <url>
-    <loc>https://glossario.bitcoinitalianetwork.com/portfolio.html</loc>
-    <lastmod>2021-10-21</lastmod>
+    <loc>https://glossario.bitcoinitalianetwork.com/rekt.html</loc>
+    <lastmod>2021-11-02</lastmod>
   </url>
   <url>
     <loc>https://glossario.bitcoinitalianetwork.com/pos.html</loc>
@@ -2293,24 +2305,24 @@
     <lastmod>2022-09-19</lastmod>
   </url>
   <url>
-    <loc>https://glossario.bitcoinitalianetwork.com/pre-sale.html</loc>
-    <lastmod>2021-10-21</lastmod>
+    <loc>https://glossario.bitcoinitalianetwork.com/difficulty-bomb.html</loc>
+    <lastmod>2021-11-10</lastmod>
   </url>
   <url>
     <loc>https://glossario.bitcoinitalianetwork.com/preimage.html</loc>
     <lastmod>2022-07-29</lastmod>
   </url>
   <url>
-    <loc>https://glossario.bitcoinitalianetwork.com/private-blockchain.html</loc>
-    <lastmod>2021-10-21</lastmod>
+    <loc>https://glossario.bitcoinitalianetwork.com/digital-signature.html</loc>
+    <lastmod>2021-11-10</lastmod>
   </url>
   <url>
     <loc>https://glossario.bitcoinitalianetwork.com/private-key.html</loc>
     <lastmod>2021-10-21</lastmod>
   </url>
   <url>
-    <loc>https://glossario.bitcoinitalianetwork.com/private-sale.html</loc>
-    <lastmod>2021-10-26</lastmod>
+    <loc>https://glossario.bitcoinitalianetwork.com/helicopter-money.html</loc>
+    <lastmod>2021-11-12</lastmod>
   </url>
   <url>
     <loc>https://glossario.bitcoinitalianetwork.com/protocol.html</loc>
@@ -2333,8 +2345,8 @@
     <lastmod>2023-01-25</lastmod>
   </url>
   <url>
-    <loc>https://glossario.bitcoinitalianetwork.com/public-blockchain.html</loc>
-    <lastmod>2021-10-21</lastmod>
+    <loc>https://glossario.bitcoinitalianetwork.com/fibonacci-retracement.html</loc>
+    <lastmod>2021-11-14</lastmod>
   </url>
   <url>
     <loc>https://glossario.bitcoinitalianetwork.com/public-key.html</loc>
@@ -2353,16 +2365,16 @@
     <lastmod>2021-12-22</lastmod>
   </url>
   <url>
-    <loc>https://glossario.bitcoinitalianetwork.com/qr-code.html</loc>
-    <lastmod>2021-10-21</lastmod>
+    <loc>https://glossario.bitcoinitalianetwork.com/fungible.html</loc>
+    <lastmod>2021-11-15</lastmod>
   </url>
   <url>
     <loc>https://glossario.bitcoinitalianetwork.com/race-attack.html</loc>
     <lastmod>2022-09-24</lastmod>
   </url>
   <url>
-    <loc>https://glossario.bitcoinitalianetwork.com/raiden-network.html</loc>
-    <lastmod>2021-10-21</lastmod>
+    <loc>https://glossario.bitcoinitalianetwork.com/ieo.html</loc>
+    <lastmod>2021-11-16</lastmod>
   </url>
   <url>
     <loc>https://glossario.bitcoinitalianetwork.com/ransomware.html</loc>
@@ -2373,20 +2385,20 @@
     <lastmod>2021-10-21</lastmod>
   </url>
   <url>
-    <loc>https://glossario.bitcoinitalianetwork.com/rebound.html</loc>
-    <lastmod>2021-10-25</lastmod>
+    <loc>https://glossario.bitcoinitalianetwork.com/sequential-deterministic-wallets.html</loc>
+    <lastmod>2021-11-18</lastmod>
   </url>
   <url>
-    <loc>https://glossario.bitcoinitalianetwork.com/redeem-script.html</loc>
-    <lastmod>2022-01-04</lastmod>
+    <loc>https://glossario.bitcoinitalianetwork.com/sopr.html</loc>
+    <lastmod>2021-11-19</lastmod>
   </url>
   <url>
     <loc>https://glossario.bitcoinitalianetwork.com/regtest.html</loc>
     <lastmod>2024-05-01</lastmod>
   </url>
   <url>
-    <loc>https://glossario.bitcoinitalianetwork.com/rekt.html</loc>
-    <lastmod>2021-11-02</lastmod>
+    <loc>https://glossario.bitcoinitalianetwork.com/zk-rollup.html</loc>
+    <lastmod>2021-12-01</lastmod>
   </url>
   <url>
     <loc>https://glossario.bitcoinitalianetwork.com/relay-network.html</loc>
@@ -2433,8 +2445,8 @@
     <lastmod>2023-12-05</lastmod>
   </url>
   <url>
-    <loc>https://glossario.bitcoinitalianetwork.com/roi.html</loc>
-    <lastmod>2021-10-21</lastmod>
+    <loc>https://glossario.bitcoinitalianetwork.com/dino.html</loc>
+    <lastmod>2021-12-03</lastmod>
   </url>
   <url>
     <loc>https://glossario.bitcoinitalianetwork.com/rollup.html</loc>
@@ -2473,8 +2485,8 @@
     <lastmod>2023-01-24</lastmod>
   </url>
   <url>
-    <loc>https://glossario.bitcoinitalianetwork.com/saft.html</loc>
-    <lastmod>2022-03-19</lastmod>
+    <loc>https://glossario.bitcoinitalianetwork.com/bond.html</loc>
+    <lastmod>2021-12-15</lastmod>
   </url>
   <url>
     <loc>https://glossario.bitcoinitalianetwork.com/sat.html</loc>
@@ -2533,8 +2545,8 @@
     <lastmod>2022-10-22</lastmod>
   </url>
   <url>
-    <loc>https://glossario.bitcoinitalianetwork.com/scrypt.html</loc>
-    <lastmod>2021-10-21</lastmod>
+    <loc>https://glossario.bitcoinitalianetwork.com/fomc.html</loc>
+    <lastmod>2021-12-15</lastmod>
   </url>
   <url>
     <loc>https://glossario.bitcoinitalianetwork.com/sdn-list.html</loc>
@@ -2593,16 +2605,16 @@
     <lastmod>2023-03-20</lastmod>
   </url>
   <url>
-    <loc>https://glossario.bitcoinitalianetwork.com/sell-wall.html</loc>
-    <lastmod>2021-10-21</lastmod>
+    <loc>https://glossario.bitcoinitalianetwork.com/laser-eyes.html</loc>
+    <lastmod>2021-12-15</lastmod>
   </url>
   <url>
     <loc>https://glossario.bitcoinitalianetwork.com/sepa.html</loc>
     <lastmod>2023-01-23</lastmod>
   </url>
   <url>
-    <loc>https://glossario.bitcoinitalianetwork.com/sequential-deterministic-wallets.html</loc>
-    <lastmod>2021-11-18</lastmod>
+    <loc>https://glossario.bitcoinitalianetwork.com/bip-70-payment-protocol.html</loc>
+    <lastmod>2021-12-20</lastmod>
   </url>
   <url>
     <loc>https://glossario.bitcoinitalianetwork.com/sha-256.html</loc>
@@ -2621,8 +2633,8 @@
     <lastmod>2021-10-21</lastmod>
   </url>
   <url>
-    <loc>https://glossario.bitcoinitalianetwork.com/shitcoin.html</loc>
-    <lastmod>2021-10-21</lastmod>
+    <loc>https://glossario.bitcoinitalianetwork.com/pbkdf2.html</loc>
+    <lastmod>2021-12-30</lastmod>
   </url>
   <url>
     <loc>https://glossario.bitcoinitalianetwork.com/short.html</loc>
@@ -2641,8 +2653,8 @@
     <lastmod>2022-09-30</lastmod>
   </url>
   <url>
-    <loc>https://glossario.bitcoinitalianetwork.com/signature.html</loc>
-    <lastmod>2021-10-27</lastmod>
+    <loc>https://glossario.bitcoinitalianetwork.com/redeem-script.html</loc>
+    <lastmod>2022-01-04</lastmod>
   </url>
   <url>
     <loc>https://glossario.bitcoinitalianetwork.com/sigop.html</loc>
@@ -2657,8 +2669,8 @@
     <lastmod>2024-05-22</lastmod>
   </url>
   <url>
-    <loc>https://glossario.bitcoinitalianetwork.com/silk-road.html</loc>
-    <lastmod>2021-10-21</lastmod>
+    <loc>https://glossario.bitcoinitalianetwork.com/bot.html</loc>
+    <lastmod>2022-01-10</lastmod>
   </url>
   <url>
     <loc>https://glossario.bitcoinitalianetwork.com/simplicity.html</loc>
@@ -2681,8 +2693,8 @@
     <lastmod>2021-10-21</lastmod>
   </url>
   <url>
-    <loc>https://glossario.bitcoinitalianetwork.com/sopr.html</loc>
-    <lastmod>2021-11-19</lastmod>
+    <loc>https://glossario.bitcoinitalianetwork.com/eip.html</loc>
+    <lastmod>2022-02-02</lastmod>
   </url>
   <url>
     <loc>https://glossario.bitcoinitalianetwork.com/spam.html</loc>
@@ -2693,8 +2705,8 @@
     <lastmod>2022-04-09</lastmod>
   </url>
   <url>
-    <loc>https://glossario.bitcoinitalianetwork.com/speedy-trial.html</loc>
-    <lastmod>2022-05-17</lastmod>
+    <loc>https://glossario.bitcoinitalianetwork.com/long-position.html</loc>
+    <lastmod>2022-02-14</lastmod>
   </url>
   <url>
     <loc>https://glossario.bitcoinitalianetwork.com/spent-output.html</loc>
@@ -2749,8 +2761,8 @@
     <lastmod>2021-10-21</lastmod>
   </url>
   <url>
-    <loc>https://glossario.bitcoinitalianetwork.com/stop-loss.html</loc>
-    <lastmod>2021-10-21</lastmod>
+    <loc>https://glossario.bitcoinitalianetwork.com/long-squeeze.html</loc>
+    <lastmod>2022-02-14</lastmod>
   </url>
   <url>
     <loc>https://glossario.bitcoinitalianetwork.com/store-of-value.html</loc>
@@ -2773,8 +2785,8 @@
     <lastmod>2021-12-14</lastmod>
   </url>
   <url>
-    <loc>https://glossario.bitcoinitalianetwork.com/swap.html</loc>
-    <lastmod>2022-05-07</lastmod>
+    <loc>https://glossario.bitcoinitalianetwork.com/mint.html</loc>
+    <lastmod>2022-02-17</lastmod>
   </url>
   <url>
     <loc>https://glossario.bitcoinitalianetwork.com/sweep.html</loc>
@@ -2861,16 +2873,16 @@
     <lastmod>2024-05-02</lastmod>
   </url>
   <url>
-    <loc>https://glossario.bitcoinitalianetwork.com/to-the-moon.html</loc>
-    <lastmod>2021-10-21</lastmod>
+    <loc>https://glossario.bitcoinitalianetwork.com/dca.html</loc>
+    <lastmod>2022-03-03</lastmod>
   </url>
   <url>
     <loc>https://glossario.bitcoinitalianetwork.com/token.html</loc>
     <lastmod>2021-10-21</lastmod>
   </url>
   <url>
-    <loc>https://glossario.bitcoinitalianetwork.com/tokenize.html</loc>
-    <lastmod>2021-10-21</lastmod>
+    <loc>https://glossario.bitcoinitalianetwork.com/legal-tender.html</loc>
+    <lastmod>2022-03-03</lastmod>
   </url>
   <url>
     <loc>https://glossario.bitcoinitalianetwork.com/tokenomic.html</loc>
@@ -2921,8 +2933,8 @@
     <lastmod>2023-09-11</lastmod>
   </url>
   <url>
-    <loc>https://glossario.bitcoinitalianetwork.com/trustless.html</loc>
-    <lastmod>2021-10-21</lastmod>
+    <loc>https://glossario.bitcoinitalianetwork.com/bip-68-nsequence.html</loc>
+    <lastmod>2022-03-17</lastmod>
   </url>
   <url>
     <loc>https://glossario.bitcoinitalianetwork.com/tumbler.html</loc>
@@ -2993,16 +3005,16 @@
     <lastmod>2022-03-03</lastmod>
   </url>
   <url>
-    <loc>https://glossario.bitcoinitalianetwork.com/uvp.html</loc>
-    <lastmod>2021-10-21</lastmod>
+    <loc>https://glossario.bitcoinitalianetwork.com/cpi.html</loc>
+    <lastmod>2022-03-18</lastmod>
   </url>
   <url>
     <loc>https://glossario.bitcoinitalianetwork.com/validator.html</loc>
     <lastmod>2021-10-21</lastmod>
   </url>
   <url>
-    <loc>https://glossario.bitcoinitalianetwork.com/vanity-address.html</loc>
-    <lastmod>2021-10-21</lastmod>
+    <loc>https://glossario.bitcoinitalianetwork.com/saft.html</loc>
+    <lastmod>2022-03-19</lastmod>
   </url>
   <url>
     <loc>https://glossario.bitcoinitalianetwork.com/vasp.html</loc>
@@ -3021,12 +3033,12 @@
     <lastmod>2025-02-07</lastmod>
   </url>
   <url>
-    <loc>https://glossario.bitcoinitalianetwork.com/virgin-bitcoin.html</loc>
-    <lastmod>2021-10-21</lastmod>
+    <loc>https://glossario.bitcoinitalianetwork.com/order-flow.html</loc>
+    <lastmod>2022-03-27</lastmod>
   </url>
   <url>
-    <loc>https://glossario.bitcoinitalianetwork.com/virtual-asset.html</loc>
-    <lastmod>2022-04-01</lastmod>
+    <loc>https://glossario.bitcoinitalianetwork.com/ngmi.html</loc>
+    <lastmod>2022-03-31</lastmod>
   </url>
   <url>
     <loc>https://glossario.bitcoinitalianetwork.com/vm.html</loc>
@@ -3037,8 +3049,8 @@
     <lastmod>2021-10-21</lastmod>
   </url>
   <url>
-    <loc>https://glossario.bitcoinitalianetwork.com/volume.html</loc>
-    <lastmod>2021-10-21</lastmod>
+    <loc>https://glossario.bitcoinitalianetwork.com/virtual-asset.html</loc>
+    <lastmod>2022-04-01</lastmod>
   </url>
   <url>
     <loc>https://glossario.bitcoinitalianetwork.com/voting-power.html</loc>
@@ -3089,8 +3101,8 @@
     <lastmod>2022-06-20</lastmod>
   </url>
   <url>
-    <loc>https://glossario.bitcoinitalianetwork.com/withdrawal.html</loc>
-    <lastmod>2021-10-21</lastmod>
+    <loc>https://glossario.bitcoinitalianetwork.com/flip.html</loc>
+    <lastmod>2022-04-05</lastmod>
   </url>
   <url>
     <loc>https://glossario.bitcoinitalianetwork.com/witness.html</loc>
@@ -3141,12 +3153,12 @@
     <lastmod>2023-05-24</lastmod>
   </url>
   <url>
-    <loc>https://glossario.bitcoinitalianetwork.com/zk-rollup.html</loc>
-    <lastmod>2021-12-01</lastmod>
+    <loc>https://glossario.bitcoinitalianetwork.com/swap.html</loc>
+    <lastmod>2022-05-07</lastmod>
   </url>
   <url>
-    <loc>https://glossario.bitcoinitalianetwork.com/zk-snarks.html</loc>
-    <lastmod>2021-10-21</lastmod>
+    <loc>https://glossario.bitcoinitalianetwork.com/speedy-trial.html</loc>
+    <lastmod>2022-05-17</lastmod>
   </url>
   <url>
     <loc>https://glossario.bitcoinitalianetwork.com/zkcp.html</loc>
